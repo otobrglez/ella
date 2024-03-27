@@ -1,6 +1,6 @@
 # ella
 
-Ella is PoC for calling statically compiled Go libraries from Rust.
+Ella is a real-time observability tool for your Prometheus-based metrics.
 
 ## Development
 
