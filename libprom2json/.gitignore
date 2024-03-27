@@ -1,0 +1,5 @@
+bindings.rs
+libprom2json.a
+libprom2json.h
+libprom2json.so
+libprom2json.o
