@@ -1,5 +1,6 @@
 use clap::Parser;
-// use prom2json::*;
+use std::ffi::{CStr, CString};
+use ella::*;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
@@ -12,10 +13,20 @@ pub struct CLI {
 }
 
 fn main() {
+
+    /*
     println!("This is ella");
     let args = &CLI::parse();
     dbg!("Collecting {:#?}", args);
     println!("{:#?}", args.port);
 
     println!("Do some add here");
+    */
+
+    unsafe {
+        let x: GoInt = 10;
+        let y: GoInt = 20;
+        let r: GoInt = add_numbers(x, y);
+        println!("Hello {:?}", r)
+    }
 }
