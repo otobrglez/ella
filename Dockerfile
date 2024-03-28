@@ -35,13 +35,10 @@ RUN go build \
   -buildmode=c-archive \
   libprom2json/main.go
 
-RUN cargo build --locked --release && cargo install --path .
+RUN cargo build --locked --release && cargo install --path . && \
+  cp ./target/release/ella /usr/local/bin/ella
 
 FROM debian:buster-slim as runtime
-
-RUN apt-get update -yyq && \
-  apt-get install -yyq curl bash && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY --from=builder /app/ella /usr/local/bin/ella
+COPY --from=builder /app/target/release/ella /usr/local/bin/ella
 CMD ["ella"]
+
