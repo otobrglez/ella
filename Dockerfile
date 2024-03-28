@@ -21,7 +21,6 @@ COPY ./libprom2json libprom2json
 COPY ./go.mod go.mod
 COPY ./go.sum go.sum
 
-
 # Rust stuff
 COPY ./src src
 COPY ./build.rs build.rs
@@ -39,6 +38,7 @@ RUN cargo build --locked --release && cargo install --path . && \
   cp ./target/release/ella /usr/local/bin/ella
 
 FROM debian:buster-slim as runtime
+EXPOSE 8000
 COPY --from=builder /app/target/release/ella /usr/local/bin/ella
 CMD ["ella"]
 

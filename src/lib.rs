@@ -47,7 +47,7 @@ impl GoString {
 mod tests {
     use std::ffi::{CStr, CString};
 
-    use super::{add_numbers, GoInt, GoString, prom_to_json};
+    use super::{add_numbers, prom_to_json, GoInt, GoString};
 
     #[test]
     fn test_addition() {
@@ -62,8 +62,8 @@ mod tests {
     // https://dev.to/socrateslee/convert-string-to-cstr-and-back-in-rust-1617
     #[test]
     fn test_prom_to_json() {
-        let x:GoString = unsafe { GoString::from_bytes_unmanaged("Helloo".as_bytes()) };
-        let result_one:CString = unsafe {
+        let x: GoString = unsafe { GoString::from_bytes_unmanaged("Helloo".as_bytes()) };
+        let result_one: CString = unsafe {
             let result = prom_to_json(x);
             CString::from_raw(result)
         };
