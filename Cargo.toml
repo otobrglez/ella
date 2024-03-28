@@ -4,7 +4,9 @@ version = "0.0.1"
 edition = "2021"
 
 [build-dependencies]
-bindgen = "0.69.4"
+# bindgen = { version="0.69.4", default_features = false, features = ["static"]}
+bindgen = { version="0.69.4" }
+
 
 [dependencies]
 clap = { version = "4.5.4", features = ["env", "derive"] }
