@@ -3,6 +3,10 @@ FROM rust:${RUST_VERSION} as builder
 
 WORKDIR /app
 
+LABEL maintainer="Oto Brglez <otobrglez@gmail.com>"
+LABEL "org.opencontainers.image.url"="https://github.com/otobrglez/ella"
+LABEL "org.opencontainers.image.source"="https://github.com/otobrglez/ella"
+
 ENV RUST_BACKTRACE=full
 ENV CGO_ENABLED=1
 ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
