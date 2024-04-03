@@ -1,0 +1,47 @@
+[
+  {
+    "name": "rocket_http_requests_duration_seconds",
+    "help": "HTTP request duration in seconds for all requests",
+    "type": "HISTOGRAM",
+    "metrics": [
+      {
+        "labels": {
+          "endpoint": "/metrics",
+          "method": "GET",
+          "status": "200"
+        },
+        "buckets": {
+          "+Inf": "141",
+          "0.005": "141",
+          "0.01": "141",
+          "0.025": "141",
+          "0.05": "141",
+          "0.1": "141",
+          "0.25": "141",
+          "0.5": "141",
+          "1": "141",
+          "10": "141",
+          "2.5": "141",
+          "5": "141"
+        },
+        "count": "141",
+        "sum": "0.06714857699999999"
+      }
+    ]
+  },
+  {
+    "name": "rocket_http_requests_total",
+    "help": "Total number of HTTP requests",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "endpoint": "/metrics",
+          "method": "GET",
+          "status": "200"
+        },
+        "value": "141"
+      }
+    ]
+  }
+]

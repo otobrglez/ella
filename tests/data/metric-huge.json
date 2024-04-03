@@ -1,0 +1,3707 @@
+[
+  {
+    "name": "jvm_memory_bytes_max",
+    "help": "Max (bytes) of a given JVM memory area.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "area": "heap",
+          "namespace": "prod"
+        },
+        "value": "6.291456e+08"
+      },
+      {
+        "labels": {
+          "area": "nonheap",
+          "namespace": "prod"
+        },
+        "value": "5.91396864e+08"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_bytes_max",
+    "help": "Max bytes of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-nmethods'"
+        },
+        "value": "5.8368e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Metaspace"
+        },
+        "value": "1.8874368e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'profiled nmethods'"
+        },
+        "value": "1.22908672e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Compressed Class Space"
+        },
+        "value": "1.50994944e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "-1"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "6.291456e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "-1"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-profiled nmethods'"
+        },
+        "value": "1.22912768e+08"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_collection_committed_bytes",
+    "help": "Committed after last collection bytes of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "3.95313152e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "2.32783872e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "1.048576e+06"
+      }
+    ]
+  },
+  {
+    "name": "karen_autocomplete_seconds_created",
+    "help": "time to do result processing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "source": "content",
+          "stage": "total"
+        },
+        "value": "1.709565656358e+09"
+      }
+    ]
+  },
+  {
+    "name": "jvm_info",
+    "help": "VM version info",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "runtime": "Java(TM) SE Runtime Environment",
+          "vendor": "Oracle Corporation",
+          "version": "21.0.1+12-LTS-29"
+        },
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "karen_variant_searcher_refresh",
+    "help": "variant serarcher refresh",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "79"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_request_count_total",
+    "help": "number of rerank requests",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "rerank"
+        },
+        "value": "158"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_collection_used_bytes",
+    "help": "Used bytes after last collection of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "1.03103168e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "673456"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_has_results_one_seconds",
+    "help": "time to check if there's some search results for a single suggestion",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0.000544289",
+          "0.5": "0.000746387",
+          "0.9": "0.001426349",
+          "0.95": "0.001691018",
+          "0.98": "0.002062574",
+          "0.99": "0.002176634"
+        },
+        "count": "2701",
+        "sum": "1.7148770799999975"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_index_fetch_time",
+    "help": "millis took to fetch the index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.895007501"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_event_count_total",
+    "help": "total events emitted",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "732"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_response_latency",
+    "help": "rerank latency",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "noop"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "3",
+        "sum": "1"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "wanda"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "141",
+        "sum": "2009"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_hasresults_cache_hitrate",
+    "help": "no-results-cache hit rate",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0.6912568306010929"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_total_seconds_histogram_created",
+    "help": "time to run the query",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565655791e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_requests_latency",
+    "help": "karen requests latency",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "category": "health",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "quantiles": {
+          "0.3": "0.000112767",
+          "0.5": "0.000121273",
+          "0.9": "0.000160701",
+          "0.95": "0.000168996",
+          "0.98": "0.000197693",
+          "0.99": "0.000234519"
+        },
+        "count": "194830",
+        "sum": "23.736507776000174"
+      },
+      {
+        "labels": {
+          "category": "collection",
+          "namespace": "prod",
+          "requestType": "collection"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "153",
+        "sum": "4.230967141999999"
+      },
+      {
+        "labels": {
+          "category": "health_search",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "1",
+        "sum": "0.115826855"
+      },
+      {
+        "labels": {
+          "category": "viewed",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "8",
+        "sum": "0.12355512999999999"
+      },
+      {
+        "labels": {
+          "category": "content",
+          "namespace": "prod",
+          "requestType": "content"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "13",
+        "sum": "0.055523627000000006"
+      },
+      {
+        "labels": {
+          "category": "trending",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "53",
+        "sum": "0.5330505059999998"
+      },
+      {
+        "labels": {
+          "category": "suggest",
+          "namespace": "prod",
+          "requestType": "suggest"
+        },
+        "quantiles": {
+          "0.3": "0.081070608",
+          "0.5": "0.081070608",
+          "0.9": "0.081070608",
+          "0.95": "0.081070608",
+          "0.98": "0.081070608",
+          "0.99": "0.081070608"
+        },
+        "count": "135",
+        "sum": "5.328263922000005"
+      },
+      {
+        "labels": {
+          "category": "search",
+          "namespace": "prod",
+          "requestType": "search"
+        },
+        "quantiles": {
+          "0.3": "0.004243098",
+          "0.5": "0.004497556",
+          "0.9": "0.033029157",
+          "0.95": "0.033029157",
+          "0.98": "0.033029157",
+          "0.99": "0.033029157"
+        },
+        "count": "8484",
+        "sum": "47.563520332000024"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_total_seconds",
+    "help": "seconds to do a full request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0.00118572",
+          "0.5": "0.00118572",
+          "0.9": "0.001365428",
+          "0.95": "0.001365428",
+          "0.98": "0.001365428",
+          "0.99": "0.001365428"
+        },
+        "count": "271",
+        "sum": "0.35967675900000023"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_search_field_count",
+    "help": "number of search fields in request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "37",
+          "0.5": "37",
+          "0.9": "37",
+          "0.95": "37",
+          "0.98": "37",
+          "0.99": "37"
+        },
+        "count": "8505",
+        "sum": "313613"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_kinesis_latency",
+    "help": "time to write to kinesis",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "99",
+        "sum": "18.839182711999996"
+      }
+    ]
+  },
+  {
+    "name": "process_open_fds",
+    "help": "Number of open file descriptors.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "69"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_load_time",
+    "help": "millis took to load the index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0.782195491"
+      }
+    ]
+  },
+  {
+    "name": "disk_write_chars",
+    "help": "The number of bytes which this task has caused to be written to the storage, not necessarily a physical one.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "5.11983335e+08"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_allocated_bytes_total",
+    "help": "Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'profiled nmethods'"
+        },
+        "value": "6.2416128e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "1.9842080152e+10"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "8.7469064176e+10"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-profiled nmethods'"
+        },
+        "value": "3.4667392e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "1.16017888e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Compressed Class Space"
+        },
+        "value": "1.7614544e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Metaspace"
+        },
+        "value": "1.54467216e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-nmethods'"
+        },
+        "value": "2.741248e+06"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_product_count_created",
+    "help": "number of products in the search response",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656332e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_facet_count_created",
+    "help": "number of facets in request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_request_count_created",
+    "help": "total search requests made",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.70956520607e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_count_created",
+    "help": "total recommend requests",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565688676e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_failed_created",
+    "help": "total recommend requests failed",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565688676e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_seconds_created",
+    "help": "recommend query timing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "location": "local",
+          "name": "trending",
+          "namespace": "prod",
+          "source": "index",
+          "stage": "total"
+        },
+        "value": "1.709565688693e+09"
+      },
+      {
+        "labels": {
+          "location": "remote",
+          "name": "viewed",
+          "namespace": "prod",
+          "source": "redis",
+          "stage": "recommend"
+        },
+        "value": "1.709712012767e+09"
+      },
+      {
+        "labels": {
+          "location": "remote",
+          "name": "viewed",
+          "namespace": "prod",
+          "source": "redis",
+          "stage": "make_response"
+        },
+        "value": "1.709712012769e+09"
+      },
+      {
+        "labels": {
+          "location": "remote",
+          "name": "viewed",
+          "namespace": "prod",
+          "source": "redis",
+          "stage": "merge"
+        },
+        "value": "1.709712012768e+09"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_collection_init_bytes",
+    "help": "Initial after last collection bytes of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "3.145728e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "5.9768832e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_requests_latency_created",
+    "help": "karen requests latency",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "category": "health",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "value": "1.70956520958e+09"
+      },
+      {
+        "labels": {
+          "category": "collection",
+          "namespace": "prod",
+          "requestType": "collection"
+        },
+        "value": "1.709625621397e+09"
+      },
+      {
+        "labels": {
+          "category": "health_search",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "value": "1.709565209493e+09"
+      },
+      {
+        "labels": {
+          "category": "viewed",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "value": "1.709712012779e+09"
+      },
+      {
+        "labels": {
+          "category": "content",
+          "namespace": "prod",
+          "requestType": "content"
+        },
+        "value": "1.709570487621e+09"
+      },
+      {
+        "labels": {
+          "category": "trending",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "value": "1.709565688706e+09"
+      },
+      {
+        "labels": {
+          "category": "suggest",
+          "namespace": "prod",
+          "requestType": "suggest"
+        },
+        "value": "1.709565656366e+09"
+      },
+      {
+        "labels": {
+          "category": "search",
+          "namespace": "prod",
+          "requestType": "search"
+        },
+        "value": "1.709565296177e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_succeeded_total",
+    "help": "total recommend requests succeeded",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_action_seconds_created",
+    "help": "suggest action processing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "source": "product_search",
+          "stage": "total"
+        },
+        "value": "1.709565656306e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "source": "top_suggestion",
+          "stage": "total"
+        },
+        "value": "1.709565656307e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_histogram_seconds",
+    "help": "query timing",
+    "type": "HISTOGRAM",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank_response"
+        },
+        "buckets": {
+          "+Inf": "144",
+          "0.05": "144",
+          "0.1": "144",
+          "0.2": "144",
+          "0.3": "144",
+          "0.4": "144",
+          "0.5": "144",
+          "0.6": "144",
+          "0.7": "144",
+          "0.8": "144",
+          "0.9": "144",
+          "1": "144"
+        },
+        "count": "144",
+        "sum": "0.13215337"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank"
+        },
+        "buckets": {
+          "+Inf": "158",
+          "0.05": "157",
+          "0.1": "158",
+          "0.2": "158",
+          "0.3": "158",
+          "0.4": "158",
+          "0.5": "158",
+          "0.6": "158",
+          "0.7": "158",
+          "0.8": "158",
+          "0.9": "158",
+          "1": "158"
+        },
+        "count": "158",
+        "sum": "2.0464219250000006"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "fetch"
+        },
+        "buckets": {
+          "+Inf": "8828",
+          "0.05": "8828",
+          "0.1": "8828",
+          "0.2": "8828",
+          "0.3": "8828",
+          "0.4": "8828",
+          "0.5": "8828",
+          "0.6": "8828",
+          "0.7": "8828",
+          "0.8": "8828",
+          "0.9": "8828",
+          "1": "8828"
+        },
+        "count": "8828",
+        "sum": "5.536082276999996"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "local_request"
+        },
+        "buckets": {
+          "+Inf": "8829",
+          "0.05": "8821",
+          "0.1": "8826",
+          "0.2": "8828",
+          "0.3": "8829",
+          "0.4": "8829",
+          "0.5": "8829",
+          "0.6": "8829",
+          "0.7": "8829",
+          "0.8": "8829",
+          "0.9": "8829",
+          "1": "8829"
+        },
+        "count": "8829",
+        "sum": "6.534865432000002"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "telemetry"
+        },
+        "buckets": {
+          "+Inf": "536",
+          "0.05": "535",
+          "0.1": "535",
+          "0.2": "535",
+          "0.3": "535",
+          "0.4": "536",
+          "0.5": "536",
+          "0.6": "536",
+          "0.7": "536",
+          "0.8": "536",
+          "0.9": "536",
+          "1": "536"
+        },
+        "count": "536",
+        "sum": "0.77426386"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "facet"
+        },
+        "buckets": {
+          "+Inf": "8828",
+          "0.05": "8828",
+          "0.1": "8828",
+          "0.2": "8828",
+          "0.3": "8828",
+          "0.4": "8828",
+          "0.5": "8828",
+          "0.6": "8828",
+          "0.7": "8828",
+          "0.8": "8828",
+          "0.9": "8828",
+          "1": "8828"
+        },
+        "count": "8828",
+        "sum": "6.359059820999974"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "search"
+        },
+        "buckets": {
+          "+Inf": "8828",
+          "0.05": "8827",
+          "0.1": "8828",
+          "0.2": "8828",
+          "0.3": "8828",
+          "0.4": "8828",
+          "0.5": "8828",
+          "0.6": "8828",
+          "0.7": "8828",
+          "0.8": "8828",
+          "0.9": "8828",
+          "1": "8828"
+        },
+        "count": "8828",
+        "sum": "10.028253516999948"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_deadlocked_monitor",
+    "help": "Cycles of JVM-threads that are in deadlock waiting to acquire object monitors",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_bytes_init",
+    "help": "Initial bytes of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-nmethods'"
+        },
+        "value": "2.555904e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Metaspace"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'profiled nmethods'"
+        },
+        "value": "2.555904e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Compressed Class Space"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "3.145728e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "5.9768832e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-profiled nmethods'"
+        },
+        "value": "2.555904e+06"
+      }
+    ]
+  },
+  {
+    "name": "jvm_gc_collection_millis_created",
+    "help": "Garbage collecting times.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "gc": "G1 Young Generation",
+          "namespace": "prod"
+        },
+        "value": "1.709565197964e+09"
+      },
+      {
+        "labels": {
+          "gc": "G1 Concurrent GC",
+          "namespace": "prod"
+        },
+        "value": "1.709565721777e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_kendall_coeff_base_created",
+    "help": "KRR for response",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "wanda"
+        },
+        "value": "1.709625621363e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_has_results_one_seconds_created",
+    "help": "time to check if there's some search results for a single suggestion",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656189e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_requests_latency_histogram_created",
+    "help": "karen requests latency",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "category": "health",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "value": "1.70956520958e+09"
+      },
+      {
+        "labels": {
+          "category": "collection",
+          "namespace": "prod",
+          "requestType": "collection"
+        },
+        "value": "1.709625621397e+09"
+      },
+      {
+        "labels": {
+          "category": "health_search",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "value": "1.709565209493e+09"
+      },
+      {
+        "labels": {
+          "category": "viewed",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "value": "1.709712012779e+09"
+      },
+      {
+        "labels": {
+          "category": "content",
+          "namespace": "prod",
+          "requestType": "content"
+        },
+        "value": "1.709570487621e+09"
+      },
+      {
+        "labels": {
+          "category": "trending",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "value": "1.709565688706e+09"
+      },
+      {
+        "labels": {
+          "category": "suggest",
+          "namespace": "prod",
+          "requestType": "suggest"
+        },
+        "value": "1.709565656366e+09"
+      },
+      {
+        "labels": {
+          "category": "search",
+          "namespace": "prod",
+          "requestType": "search"
+        },
+        "value": "1.709565296177e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_health_search",
+    "help": "health search query timing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0.038760552"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_results_cache_hitrate",
+    "help": "suggest results cache hit rate",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0.16129032258064516"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_failed_total",
+    "help": "total recommend requests failed",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_event_batch_count_created",
+    "help": "total event batches submitted",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656182e+09"
+      }
+    ]
+  },
+  {
+    "name": "process_start_time_seconds",
+    "help": "Start time of the process since unix epoch in seconds.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565195421e+09"
+      }
+    ]
+  },
+  {
+    "name": "jvm_classes_loaded_total",
+    "help": "The total number of classes that have been loaded since the JVM has started execution",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "22018"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_query_term_count_created",
+    "help": "query term count",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_collection_max_bytes",
+    "help": "Max bytes after last collection of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "-1"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "6.291456e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "-1"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_variants_per_product",
+    "help": "variants per product rate",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "0",
+        "sum": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_return_field_count",
+    "help": "number of return fields in request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "0",
+        "sum": "0"
+      }
+    ]
+  },
+  {
+    "name": "system_memory_limit_bytes",
+    "help": "Memory limit in bytes.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_peak",
+    "help": "Peak thread count of a JVM",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "125"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_query_term_count",
+    "help": "query term count",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "1",
+          "0.5": "1",
+          "0.9": "1",
+          "0.95": "1",
+          "0.98": "1",
+          "0.99": "1"
+        },
+        "count": "8505",
+        "sum": "8620"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_request_count_total",
+    "help": "total search requests made",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "76"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_request_count_created",
+    "help": "total search requests made",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.70956565579e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_kinesis_latency_created",
+    "help": "time to write to kinesis",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656182e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_action_seconds",
+    "help": "suggest action processing",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "source": "product_search",
+          "stage": "total"
+        },
+        "quantiles": {
+          "0.3": "0.074482498",
+          "0.5": "0.074482498",
+          "0.9": "0.074482498",
+          "0.95": "0.074482498",
+          "0.98": "0.074482498",
+          "0.99": "0.074482498"
+        },
+        "count": "135",
+        "sum": "4.468547008000003"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "source": "top_suggestion",
+          "stage": "total"
+        },
+        "quantiles": {
+          "0.3": "1.4635e-05",
+          "0.5": "1.4635e-05",
+          "0.9": "1.4635e-05",
+          "0.95": "1.4635e-05",
+          "0.98": "1.4635e-05",
+          "0.99": "1.4635e-05"
+        },
+        "count": "135",
+        "sum": "0.0011368820000000003"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggestion_index_load_time",
+    "help": "millis took to load the suggestion index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "2.1532e-05"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_event_count_created",
+    "help": "total events emitted",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656181e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_product_count",
+    "help": "number of products in the search response",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "5",
+          "0.5": "5",
+          "0.9": "6",
+          "0.95": "6",
+          "0.98": "6",
+          "0.99": "6"
+        },
+        "count": "271",
+        "sum": "1057"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_request_count_total",
+    "help": "total search requests made",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "8670"
+      }
+    ]
+  },
+  {
+    "name": "jvm_classes_currently_loaded",
+    "help": "The number of classes that are currently loaded in the JVM",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "21792"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_histogram_seconds_created",
+    "help": "query timing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank_response"
+        },
+        "value": "1.709625621334e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank"
+        },
+        "value": "1.709625621258e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "fetch"
+        },
+        "value": "1.709565206284e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "local_request"
+        },
+        "value": "1.709565209445e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "telemetry"
+        },
+        "value": "1.709565655823e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "facet"
+        },
+        "value": "1.709565206208e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "search"
+        },
+        "value": "1.709565206071e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_variants_per_product_created",
+    "help": "variants per product rate",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_pin_count",
+    "help": "number of pins in request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0",
+          "0.5": "0",
+          "0.9": "1",
+          "0.95": "1",
+          "0.98": "1",
+          "0.99": "1"
+        },
+        "count": "8829",
+        "sum": "238"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_variant_count",
+    "help": "variant count in index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "3777"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_product_matches_count",
+    "help": "number of products matched",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "42",
+          "0.5": "42",
+          "0.9": "57",
+          "0.95": "57",
+          "0.98": "57",
+          "0.99": "57"
+        },
+        "count": "271",
+        "sum": "9153"
+      }
+    ]
+  },
+  {
+    "name": "disk_read_chars",
+    "help": "The number of bytes which this task has caused to be read from storage, not necessarily a physical one.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.239849184e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_filter_count",
+    "help": "number of filters in request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0",
+          "0.5": "0",
+          "0.9": "2",
+          "0.95": "2",
+          "0.98": "2",
+          "0.99": "2"
+        },
+        "count": "8829",
+        "sum": "536"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_bytes_used",
+    "help": "Used bytes of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-nmethods'"
+        },
+        "value": "2.554112e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Metaspace"
+        },
+        "value": "1.53958696e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'profiled nmethods'"
+        },
+        "value": "2.428928e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Compressed Class Space"
+        },
+        "value": "1.7498832e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "1.49946368e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "1.03103168e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "673456"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-profiled nmethods'"
+        },
+        "value": "2.444608e+07"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_loader_refresh",
+    "help": "index loader refresh",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "68"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_loading_delay_seconds",
+    "help": "The delay in seconds between creating the index by Maestro and reading it by karen",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_cold_start_time",
+    "help": "millis took to perform complete cold start",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "10.412080261"
+      }
+    ]
+  },
+  {
+    "name": "jvm_buffer_pool_used_bytes",
+    "help": "Used bytes of a given JVM buffer pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "mapped"
+        },
+        "value": "5.902208e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "direct"
+        },
+        "value": "3.9395186e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "mapped - 'non-volatile memory'"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "jvm_gc_collection_millis",
+    "help": "Garbage collecting times.",
+    "type": "HISTOGRAM",
+    "metrics": [
+      {
+        "labels": {
+          "gc": "G1 Young Generation",
+          "namespace": "prod"
+        },
+        "buckets": {
+          "+Inf": "299",
+          "10": "265",
+          "100": "299",
+          "1000": "299",
+          "150": "299",
+          "2000": "299",
+          "300": "299",
+          "50": "298",
+          "500": "299",
+          "5000": "299"
+        },
+        "count": "299",
+        "sum": "2312"
+      },
+      {
+        "labels": {
+          "gc": "G1 Concurrent GC",
+          "namespace": "prod"
+        },
+        "buckets": {
+          "+Inf": "176",
+          "10": "89",
+          "100": "175",
+          "1000": "176",
+          "150": "176",
+          "2000": "176",
+          "300": "176",
+          "50": "173",
+          "500": "176",
+          "5000": "176"
+        },
+        "count": "176",
+        "sum": "2055"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_kendall_coeff_base",
+    "help": "KRR for response",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "wanda"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "141",
+        "sum": "141"
+      }
+    ]
+  },
+  {
+    "name": "jvm_buffer_pool_used_buffers",
+    "help": "Used buffers of a given JVM buffer pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "mapped"
+        },
+        "value": "12"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "direct"
+        },
+        "value": "93"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "mapped - 'non-volatile memory'"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_event_batch_count_total",
+    "help": "total event batches submitted",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "198"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_hasresults_cache_refresh_created",
+    "help": "no-results-cache cache post-index reload refresh",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656189e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_document_count",
+    "help": "product count in index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1009"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_daemon",
+    "help": "Daemon thread count of a JVM",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "39"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_deadlocked",
+    "help": "Cycles of JVM-threads that are in deadlock waiting to acquire object monitors or ownable synchronizers",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "disk_write_operations",
+    "help": "Number of IO write operations per second.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.051285e+06"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_seconds",
+    "help": "time to do result processing",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "product_match"
+        },
+        "quantiles": {
+          "0.3": "0.010270061",
+          "0.5": "0.010270061",
+          "0.9": "0.010270061",
+          "0.95": "0.010270061",
+          "0.98": "0.010270061",
+          "0.99": "0.010270061"
+        },
+        "count": "135",
+        "sum": "1.1763992069999996"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "total"
+        },
+        "quantiles": {
+          "0.3": "0.077775066",
+          "0.5": "0.077775066",
+          "0.9": "0.077775066",
+          "0.95": "0.077775066",
+          "0.98": "0.077775066",
+          "0.99": "0.077775066"
+        },
+        "count": "135",
+        "sum": "4.887833633"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "has_results"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "76",
+        "sum": "0.7954020519999998"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "generate"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "79",
+        "sum": "2.722172285000001"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_request_count_created",
+    "help": "number of rerank requests",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "rerank"
+        },
+        "value": "1.709625621377e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_seconds",
+    "help": "query timing",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank_response"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "144",
+        "sum": "0.13210262800000003"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "158",
+        "sum": "2.044975091000001"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "fetch"
+        },
+        "quantiles": {
+          "0.3": "0.000425924",
+          "0.5": "0.000473192",
+          "0.9": "0.001326166",
+          "0.95": "0.001326166",
+          "0.98": "0.001326166",
+          "0.99": "0.001326166"
+        },
+        "count": "8828",
+        "sum": "5.505321968999994"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "local_request"
+        },
+        "quantiles": {
+          "0.3": "0.000434832",
+          "0.5": "0.000449267",
+          "0.9": "0.001058425",
+          "0.95": "0.001058425",
+          "0.98": "0.001058425",
+          "0.99": "0.001058425"
+        },
+        "count": "8829",
+        "sum": "6.5105349070000065"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "total"
+        },
+        "quantiles": {
+          "0.3": "0.00250283",
+          "0.5": "0.002724991",
+          "0.9": "0.031319268",
+          "0.95": "0.031319268",
+          "0.98": "0.031319268",
+          "0.99": "0.031319268"
+        },
+        "count": "8637",
+        "sum": "32.201649089"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "telemetry"
+        },
+        "quantiles": {
+          "0.3": "0.001369394",
+          "0.5": "0.001369394",
+          "0.9": "0.001369394",
+          "0.95": "0.001369394",
+          "0.98": "0.001369394",
+          "0.99": "0.001369394"
+        },
+        "count": "536",
+        "sum": "0.7730554070000004"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "facet"
+        },
+        "quantiles": {
+          "0.3": "0.000560674",
+          "0.5": "0.000583077",
+          "0.9": "0.001167958",
+          "0.95": "0.001167958",
+          "0.98": "0.001167958",
+          "0.99": "0.001167958"
+        },
+        "count": "8828",
+        "sum": "6.3351500409999755"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "search"
+        },
+        "quantiles": {
+          "0.3": "0.00094494",
+          "0.5": "0.001191156",
+          "0.9": "0.029550792",
+          "0.95": "0.029550792",
+          "0.98": "0.029550792",
+          "0.99": "0.029550792"
+        },
+        "count": "8828",
+        "sum": "9.988721701"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_discovery_time",
+    "help": "millis took to discover the index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0.893299043"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_facet_count",
+    "help": "number of facets in request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "9",
+          "0.5": "9",
+          "0.9": "9",
+          "0.95": "9",
+          "0.98": "9",
+          "0.99": "9"
+        },
+        "count": "8829",
+        "sum": "77706"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_query_length",
+    "help": "query length",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "7",
+          "0.5": "7",
+          "0.9": "7",
+          "0.95": "7",
+          "0.98": "7",
+          "0.99": "7"
+        },
+        "count": "8505",
+        "sum": "59986"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_pin_count_created",
+    "help": "number of pins in request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_search_field_count_created",
+    "help": "number of search fields in request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_fallbacked_created",
+    "help": "total recommend requests fallbacked",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565688676e+09"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_bytes_committed",
+    "help": "Committed bytes of a given JVM memory pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-nmethods'"
+        },
+        "value": "2.752512e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Metaspace"
+        },
+        "value": "1.54927104e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'profiled nmethods'"
+        },
+        "value": "3.8600704e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Compressed Class Space"
+        },
+        "value": "1.7956864e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "3.95313152e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "2.32783872e+08"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "1.048576e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-profiled nmethods'"
+        },
+        "value": "2.4510464e+07"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_product_matches_count_created",
+    "help": "number of products matched",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656332e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_io_iops",
+    "help": "number of IO write operations per second",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "direction": "read",
+          "namespace": "prod"
+        },
+        "value": "1.629263e+06"
+      },
+      {
+        "labels": {
+          "direction": "write",
+          "namespace": "prod"
+        },
+        "value": "1.051268e+06"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_hasresults_eviction_count",
+    "help": "no-results-cache eviction count",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_bytes_committed",
+    "help": "Committed (bytes) of a given JVM memory area.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "area": "heap",
+          "namespace": "prod"
+        },
+        "value": "6.291456e+08"
+      },
+      {
+        "labels": {
+          "area": "nonheap",
+          "namespace": "prod"
+        },
+        "value": "2.38747648e+08"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_event_batch_error_count_total",
+    "help": "total event batches failed",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_seconds",
+    "help": "recommend query timing",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "location": "local",
+          "name": "trending",
+          "namespace": "prod",
+          "source": "index",
+          "stage": "total"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "61",
+        "sum": "0.326796963"
+      },
+      {
+        "labels": {
+          "location": "remote",
+          "name": "viewed",
+          "namespace": "prod",
+          "source": "redis",
+          "stage": "recommend"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "8",
+        "sum": "0.039598618"
+      },
+      {
+        "labels": {
+          "location": "remote",
+          "name": "viewed",
+          "namespace": "prod",
+          "source": "redis",
+          "stage": "make_response"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "8",
+        "sum": "5.232e-06"
+      },
+      {
+        "labels": {
+          "location": "remote",
+          "name": "viewed",
+          "namespace": "prod",
+          "source": "redis",
+          "stage": "merge"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "8",
+        "sum": "9.511000000000001e-06"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_search_seconds",
+    "help": "seconds to do a search part of request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0.000330512",
+          "0.5": "0.000330512",
+          "0.9": "0.000455822",
+          "0.95": "0.000455822",
+          "0.98": "0.000455822",
+          "0.99": "0.000455822"
+        },
+        "count": "271",
+        "sum": "0.13906469000000007"
+      }
+    ]
+  },
+  {
+    "name": "karen_telemetry_event_batch_error_count_created",
+    "help": "total event batches failed",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656182e+09"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_state",
+    "help": "Current count of threads by state",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "state": "TERMINATED"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "state": "NEW"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "state": "BLOCKED"
+        },
+        "value": "0"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "state": "TIMED_WAITING"
+        },
+        "value": "16"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "state": "RUNNABLE"
+        },
+        "value": "21"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "state": "WAITING"
+        },
+        "value": "66"
+      }
+    ]
+  },
+  {
+    "name": "karen_io_sys_bytes",
+    "help": "number of io bytes per second on syscalls",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "direction": "read",
+          "namespace": "prod"
+        },
+        "value": "1.239847389e+09"
+      },
+      {
+        "labels": {
+          "direction": "write",
+          "namespace": "prod"
+        },
+        "value": "5.11982596e+08"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_search_seconds_created",
+    "help": "seconds to do a search part of request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656332e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_io_bytes",
+    "help": "number of io bytes per second hitting the disk",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "direction": "read",
+          "namespace": "prod"
+        },
+        "value": "28672"
+      },
+      {
+        "labels": {
+          "direction": "write",
+          "namespace": "prod"
+        },
+        "value": "4.85945344e+08"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_objects_pending_finalization",
+    "help": "The number of objects waiting in the finalizer queue.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_total_seconds_histogram",
+    "help": "time to run the query",
+    "type": "HISTOGRAM",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "buckets": {
+          "+Inf": "135",
+          "0.05": "117",
+          "0.1": "133",
+          "0.2": "134",
+          "0.3": "134",
+          "0.4": "134",
+          "0.5": "134",
+          "0.6": "135",
+          "0.7": "135",
+          "0.8": "135",
+          "0.9": "135",
+          "1": "135"
+        },
+        "count": "135",
+        "sum": "2.438524353000002"
+      }
+    ]
+  },
+  {
+    "name": "karen_requests_latency_histogram",
+    "help": "karen requests latency",
+    "type": "HISTOGRAM",
+    "metrics": [
+      {
+        "labels": {
+          "category": "health",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "buckets": {
+          "+Inf": "194830",
+          "0.05": "194830",
+          "0.1": "194830",
+          "0.2": "194830",
+          "0.3": "194830",
+          "0.4": "194830",
+          "0.5": "194830",
+          "0.6": "194830",
+          "0.7": "194830",
+          "0.8": "194830",
+          "0.9": "194830",
+          "1": "194830"
+        },
+        "count": "194830",
+        "sum": "23.73650777600017"
+      },
+      {
+        "labels": {
+          "category": "collection",
+          "namespace": "prod",
+          "requestType": "collection"
+        },
+        "buckets": {
+          "+Inf": "153",
+          "0.05": "144",
+          "0.1": "151",
+          "0.2": "152",
+          "0.3": "153",
+          "0.4": "153",
+          "0.5": "153",
+          "0.6": "153",
+          "0.7": "153",
+          "0.8": "153",
+          "0.9": "153",
+          "1": "153"
+        },
+        "count": "153",
+        "sum": "4.230967141999999"
+      },
+      {
+        "labels": {
+          "category": "health_search",
+          "namespace": "prod",
+          "requestType": "health"
+        },
+        "buckets": {
+          "+Inf": "1",
+          "0.05": "0",
+          "0.1": "0",
+          "0.2": "1",
+          "0.3": "1",
+          "0.4": "1",
+          "0.5": "1",
+          "0.6": "1",
+          "0.7": "1",
+          "0.8": "1",
+          "0.9": "1",
+          "1": "1"
+        },
+        "count": "1",
+        "sum": "0.115826855"
+      },
+      {
+        "labels": {
+          "category": "viewed",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "buckets": {
+          "+Inf": "8",
+          "0.05": "8",
+          "0.1": "8",
+          "0.2": "8",
+          "0.3": "8",
+          "0.4": "8",
+          "0.5": "8",
+          "0.6": "8",
+          "0.7": "8",
+          "0.8": "8",
+          "0.9": "8",
+          "1": "8"
+        },
+        "count": "8",
+        "sum": "0.12355512999999999"
+      },
+      {
+        "labels": {
+          "category": "content",
+          "namespace": "prod",
+          "requestType": "content"
+        },
+        "buckets": {
+          "+Inf": "13",
+          "0.05": "13",
+          "0.1": "13",
+          "0.2": "13",
+          "0.3": "13",
+          "0.4": "13",
+          "0.5": "13",
+          "0.6": "13",
+          "0.7": "13",
+          "0.8": "13",
+          "0.9": "13",
+          "1": "13"
+        },
+        "count": "13",
+        "sum": "0.055523627000000006"
+      },
+      {
+        "labels": {
+          "category": "trending",
+          "namespace": "prod",
+          "requestType": "recommend"
+        },
+        "buckets": {
+          "+Inf": "53",
+          "0.05": "52",
+          "0.1": "53",
+          "0.2": "53",
+          "0.3": "53",
+          "0.4": "53",
+          "0.5": "53",
+          "0.6": "53",
+          "0.7": "53",
+          "0.8": "53",
+          "0.9": "53",
+          "1": "53"
+        },
+        "count": "53",
+        "sum": "0.5330505059999998"
+      },
+      {
+        "labels": {
+          "category": "suggest",
+          "namespace": "prod",
+          "requestType": "suggest"
+        },
+        "buckets": {
+          "+Inf": "135",
+          "0.05": "102",
+          "0.1": "124",
+          "0.2": "132",
+          "0.3": "134",
+          "0.4": "134",
+          "0.5": "134",
+          "0.6": "134",
+          "0.7": "135",
+          "0.8": "135",
+          "0.9": "135",
+          "1": "135"
+        },
+        "count": "135",
+        "sum": "5.328263922000005"
+      },
+      {
+        "labels": {
+          "category": "search",
+          "namespace": "prod",
+          "requestType": "search"
+        },
+        "buckets": {
+          "+Inf": "8484",
+          "0.05": "8468",
+          "0.1": "8480",
+          "0.2": "8481",
+          "0.3": "8484",
+          "0.4": "8484",
+          "0.5": "8484",
+          "0.6": "8484",
+          "0.7": "8484",
+          "0.8": "8484",
+          "0.9": "8484",
+          "1": "8484"
+        },
+        "count": "8484",
+        "sum": "47.563520332000024"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_suggestion_index_fetch_time",
+    "help": "millis took to fetch the index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "6.9528e-05"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_pool_allocated_bytes_created",
+    "help": "Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'profiled nmethods'"
+        },
+        "value": "1.709565197953e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Old Gen"
+        },
+        "value": "1.709565197958e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Eden Space"
+        },
+        "value": "1.709565197958e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-profiled nmethods'"
+        },
+        "value": "1.709565197958e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "G1 Survivor Space"
+        },
+        "value": "1.709565197958e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Compressed Class Space"
+        },
+        "value": "1.709565197958e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "Metaspace"
+        },
+        "value": "1.709565197958e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "CodeHeap 'non-nmethods'"
+        },
+        "value": "1.709565197958e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_index_size_bytes",
+    "help": "index size in bytes",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "236111"
+      }
+    ]
+  },
+  {
+    "name": "karen_index_size_bytes",
+    "help": "index size in bytes",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "8.489198e+06"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_fallbacked_total",
+    "help": "total recommend requests fallbacked",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "jvm_classes_unloaded_total",
+    "help": "The total number of classes that have been unloaded since the JVM has started execution",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "226"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_hasresults_total_elements",
+    "help": "no-results-cache total elements",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "74"
+      }
+    ]
+  },
+  {
+    "name": "disk_read_bytes",
+    "help": "Number of bytes read directly from disk.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "28672"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggestion_index_size_bytes",
+    "help": "suggestion index size in bytes",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_return_field_count_created",
+    "help": "number of return fields in request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_response_latency_created",
+    "help": "rerank latency",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "noop"
+        },
+        "value": "1.709642265969e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "wanda"
+        },
+        "value": "1.709625621326e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_total_seconds_created",
+    "help": "time to run the query",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.70956565579e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_seconds_created",
+    "help": "query timing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank_response"
+        },
+        "value": "1.709625621334e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "rerank"
+        },
+        "value": "1.709625621257e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "fetch"
+        },
+        "value": "1.709565206284e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "local_request"
+        },
+        "value": "1.709565209445e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "total"
+        },
+        "value": "1.70956529606e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "telemetry"
+        },
+        "value": "1.709565655823e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "facet"
+        },
+        "value": "1.709565206208e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "search"
+        },
+        "value": "1.709565206071e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_total_seconds",
+    "help": "time to run the query",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0.072954662",
+          "0.5": "0.072954662",
+          "0.9": "0.072954662",
+          "0.95": "0.072954662",
+          "0.98": "0.072954662",
+          "0.99": "0.072954662"
+        },
+        "count": "135",
+        "sum": "2.440769156000001"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_current",
+    "help": "Current thread count of a JVM",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "103"
+      }
+    ]
+  },
+  {
+    "name": "process_max_fds",
+    "help": "Maximum number of open file descriptors.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.048576e+06"
+      }
+    ]
+  },
+  {
+    "name": "disk_read_operations",
+    "help": "Number of IO read operations per second.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.629286e+06"
+      }
+    ]
+  },
+  {
+    "name": "disk_write_bytes",
+    "help": "Number of bytes written directly to disk.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "4.85945344e+08"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_bytes_init",
+    "help": "Initial bytes of a given JVM memory area.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "area": "heap",
+          "namespace": "prod"
+        },
+        "value": "6.291456e+08"
+      },
+      {
+        "labels": {
+          "area": "nonheap",
+          "namespace": "prod"
+        },
+        "value": "7.667712e+06"
+      }
+    ]
+  },
+  {
+    "name": "karen_autocomplete_seconds",
+    "help": "time to do result processing",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "source": "content",
+          "stage": "total"
+        },
+        "quantiles": {
+          "0.3": "0.002247038",
+          "0.5": "0.002247038",
+          "0.9": "0.002247038",
+          "0.95": "0.002247038",
+          "0.98": "0.002247038",
+          "0.99": "0.002247038"
+        },
+        "count": "135",
+        "sum": "0.30745873199999996"
+      }
+    ]
+  },
+  {
+    "name": "karen_warmup_time",
+    "help": "millis took to warmup karen",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.956032561"
+      }
+    ]
+  },
+  {
+    "name": "jvm_buffer_pool_capacity_bytes",
+    "help": "Bytes capacity of a given JVM buffer pool.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "mapped"
+        },
+        "value": "5.902208e+06"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "direct"
+        },
+        "value": "3.9395184e+07"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "pool": "mapped - 'non-volatile memory'"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_hasresults_cache_refresh_total",
+    "help": "no-results-cache cache post-index reload refresh",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "68"
+      }
+    ]
+  },
+  {
+    "name": "jvm_memory_bytes_used",
+    "help": "Used bytes of a given JVM memory area.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "area": "heap",
+          "namespace": "prod"
+        },
+        "value": "2.53722992e+08"
+      },
+      {
+        "labels": {
+          "area": "nonheap",
+          "namespace": "prod"
+        },
+        "value": "2.22747e+08"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_fetch_seconds_created",
+    "help": "seconds to do a fetch part of request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656332e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_total_seconds_created",
+    "help": "seconds to do a full request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565656332e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_index_fetch_time",
+    "help": "millis took to fetch the index",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.153638459"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggestion_index_loading_delay_seconds",
+    "help": "The delay in seconds between creating the index by Maestro and reading it by karen",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "karen_requests_in_progress",
+    "help": "amount of requests currently processed",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "process_cpu_seconds_total",
+    "help": "Total user and system CPU time spent in seconds.",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "10973.08"
+      }
+    ]
+  },
+  {
+    "name": "process_resident_memory_bytes",
+    "help": "Resident memory size in bytes.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.139216384e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_query_length_created",
+    "help": "query length",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206068e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_succeeded_created",
+    "help": "total recommend requests succeeded",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565688676e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_recommend_request_count_total",
+    "help": "total recommend requests",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "name": "jvm_threads_started_total",
+    "help": "Started thread count of a JVM",
+    "type": "COUNTER",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1595"
+      }
+    ]
+  },
+  {
+    "name": "karen_product_filter_count_created",
+    "help": "number of filters in request",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.709565206069e+09"
+      }
+    ]
+  },
+  {
+    "name": "process_virtual_memory_bytes",
+    "help": "Virtual memory size in bytes.",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "value": "1.905270784e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_kendall_coeff_bins",
+    "help": "KRR for response",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "wanda"
+        },
+        "quantiles": {
+          "0.3": "NaN",
+          "0.5": "NaN",
+          "0.9": "NaN",
+          "0.95": "NaN",
+          "0.98": "NaN",
+          "0.99": "NaN"
+        },
+        "count": "141",
+        "sum": "141"
+      }
+    ]
+  },
+  {
+    "name": "karen_content_fetch_seconds",
+    "help": "seconds to do a fetch part of request",
+    "type": "SUMMARY",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod"
+        },
+        "quantiles": {
+          "0.3": "0.000834131",
+          "0.5": "0.000834131",
+          "0.9": "0.000896704",
+          "0.95": "0.000896704",
+          "0.98": "0.000896704",
+          "0.99": "0.000896704"
+        },
+        "count": "271",
+        "sum": "0.21531963399999993"
+      }
+    ]
+  },
+  {
+    "name": "karen_rerank_kendall_coeff_bins_created",
+    "help": "KRR for response",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "ranker": "wanda"
+        },
+        "value": "1.709625621364e+09"
+      }
+    ]
+  },
+  {
+    "name": "karen_suggest_seconds_created",
+    "help": "time to do result processing",
+    "type": "GAUGE",
+    "metrics": [
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "product_match"
+        },
+        "value": "1.709565655792e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "total"
+        },
+        "value": "1.709565656358e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "has_results"
+        },
+        "value": "1.709565803908e+09"
+      },
+      {
+        "labels": {
+          "namespace": "prod",
+          "stage": "generate"
+        },
+        "value": "1.70956572981e+09"
+      }
+    ]
+  }
+]

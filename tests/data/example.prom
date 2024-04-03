@@ -1,0 +1,19 @@
+# HELP rocket_http_requests_duration_seconds HTTP request duration in seconds for all requests
+# TYPE rocket_http_requests_duration_seconds histogram
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.005"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.01"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.025"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.05"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.1"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.25"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="0.5"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="1"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="2.5"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="5"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="10"} 141
+rocket_http_requests_duration_seconds_bucket{endpoint="/metrics",method="GET",status="200",le="+Inf"} 141
+rocket_http_requests_duration_seconds_sum{endpoint="/metrics",method="GET",status="200"} 0.06714857699999999
+rocket_http_requests_duration_seconds_count{endpoint="/metrics",method="GET",status="200"} 141
+# HELP rocket_http_requests_total Total number of HTTP requests
+# TYPE rocket_http_requests_total counter
+rocket_http_requests_total{endpoint="/metrics",method="GET",status="200"} 141

@@ -2,10 +2,17 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 
-use std::mem;
-use std::os::raw::c_char;
+pub mod ella_metrics;
+pub mod cli;
+pub mod metric_client;
+pub mod metric_endpoint;
+pub mod metric_parser;
+mod utils;
+pub mod family;
 
 use libc::ptrdiff_t;
+use std::mem;
+use std::os::raw::c_char;
 
 include!(concat!("../libprom2json/", "bindings.rs"));
 const DUMMY_SAFE_PTR: &[u8] = &[0u8; 1024];
@@ -43,46 +50,46 @@ impl GoString {
     }
 }
 
-#[cfg(test)]
-mod tests {
-    use std::ffi::{CStr, CString};
+pub mod prom_to_json {
+    use super::{prom_to_json as low_prom_to_json, GoString};
+    use std::ffi::CString;
 
-    use super::{add_numbers, prom_to_json, GoInt, GoString};
+    pub fn parse(raw: String) -> Result<String, Box<dyn std::error::Error>> {
+        let raw_input: CString = CString::new(raw).unwrap();
+        let raw_input_as_go_string = GoString {
+            p: raw_input.as_ptr(),
+            n: raw_input.as_bytes().len() as isize,
+        };
 
-    #[test]
-    fn test_addition() {
-        unsafe {
-            let x: GoInt = 10;
-            let y: GoInt = 20;
-            let r: GoInt = add_numbers(x, y);
-            assert_eq!(r, 30);
+        let result: (String, String) = unsafe {
+            let result = low_prom_to_json(raw_input_as_go_string);
+            (
+                CString::from_raw(result.r0).into_string().unwrap(),
+                CString::from_raw(result.r1).into_string().unwrap(),
+            )
+        };
+
+        match result {
+            (ok, some) if some.is_empty() => Ok(ok),
+            (_, err) => Err(Box::from(err)),
         }
     }
+}
 
-    // https://dev.to/socrateslee/convert-string-to-cstr-and-back-in-rust-1617
+#[cfg(test)]
+mod tests {
+    use super::prom_to_json;
+    use std::fs;
+
     #[test]
     fn test_prom_to_json() {
-        let x: GoString = unsafe { GoString::from_bytes_unmanaged("Helloo".as_bytes()) };
-        let result_one: CString = unsafe {
-            let result = prom_to_json(x);
-            CString::from_raw(result)
-        };
-        println!("{:?}", result_one);
+        let error_example = prom_to_json::parse("hello".to_string());
+        let error = error_example.err().unwrap().to_string();
+        assert!(!error.is_empty(), "not good. expecting error.");
 
-        let my_name = CString::new("oto brglez").unwrap();
-        let go_str_ref = GoString {
-            p: my_name.as_ptr(),
-            n: my_name.as_bytes().len() as isize,
-        };
-        let result_two = unsafe { CString::from_raw(prom_to_json(go_str_ref)) };
-        println!("{:?}", result_two);
+        let prom_example = fs::read_to_string("./tests/data/example.prom").unwrap();
+        let ok_example = prom_to_json::parse(prom_example).unwrap();
 
-        /*
-        let s:String = "Hello World!".to_string();
-        let c_string: CString = CString::new(s.as_str()).unwrap();
-        let c_str: &CStr = c_string.as_c_str();
-        let result_three = unsafe { CString::from_raw(prom_to_json(c_string)) };
-        println!("{:?}", result_three);
-         */
+        assert!(!ok_example.is_empty(), "not good. expecting json.");
     }
 }

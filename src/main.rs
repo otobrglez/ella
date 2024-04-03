@@ -1,42 +1,54 @@
-#[macro_use] extern crate rocket;
-use clap::Parser;
-use std::ffi::{CStr, CString};
-use ella::*;
-use rocket::tokio::time::{sleep, Duration};
+#[macro_use]
+extern crate rocket;
+
 use std::io;
+
 use rocket::tokio::task::spawn_blocking;
+use rocket::tokio::time::{Duration, sleep};
 use rocket_prometheus::{
     prometheus::{opts, IntCounterVec},
-    PrometheusMetrics,
+    PrometheusMetrics
 };
+use once_cell::sync::Lazy;
+use ella::cli::CLI;
+use ella::ella_metrics;
+use ella::metric_client::MetricClient;
+use ella::metric_endpoint::MetricEndpoint;
 
-#[derive(Parser, Debug)]
-#[command(version, about, long_about = None)]
-pub struct CLI {
-    #[arg(short, long, env, default_value = "3434")]
-    port: usize,
+#[rocket::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let cli = CLI::with_included_self_metrics();
+    let endpoints: Vec<MetricEndpoint> = cli
+        .metric_urls
+        .into_iter()
+        .filter_map(|url| MetricEndpoint::from_string(url).ok())
+        .collect();
 
-    #[clap(value_name = "Metric URLs", required = true)]
-    metric_urls: Vec<String>,
-}
+    let mut metric_client = MetricClient::with_request_client(reqwest::Client::new());
+    let mut interval = tokio::time::interval(*cli.collect_interval);
 
-fn old_main() {
+    // Rocket && API
+    let prometheus: PrometheusMetrics = PrometheusMetrics::new();
+    prometheus.registry().
+        register(Box::new(ella_metrics::ELLA_REQUEST_COUNTER.clone()))
+        .unwrap();
+        
+    let rocket = rocket::build()
+        .attach(prometheus.clone())
+        .mount("/", routes![index, delay, blocking_readme])
+        .mount("/metrics", prometheus);
 
-    /*
-    println!("This is ella");
-    let args = &CLI::parse();
-    dbg!("Collecting {:#?}", args);
-    println!("{:#?}", args.port);
+    // Collection
+    tokio::spawn(async move {
+        loop {
+            interval.tick().await;
+            metric_client.collect_from_endpoints(&endpoints).await;
+        }
+    });
 
-    println!("Do some add here");
-    */
+    rocket.launch().await?;
 
-    unsafe {
-        let x: GoInt = 10;
-        let y: GoInt = 20;
-        let r: GoInt = add_numbers(x, y);
-        println!("Hello {:?}", r)
-    }
+    Ok(())
 }
 
 #[get("/")]
@@ -53,29 +65,9 @@ async fn delay(seconds: u64) -> String {
 #[get("/readme")]
 async fn blocking_readme() -> io::Result<Vec<u8>> {
     // In a real app, use rocket::fs::NamedFile or tokio::fs::File.
-    let vec = spawn_blocking(|| std::fs::read("README.md")).await
+    let vec = spawn_blocking(|| std::fs::read("README.md"))
+        .await
         .map_err(|e| io::Error::new(io::ErrorKind::Interrupted, e))??;
 
     Ok(vec)
-}
-
-/*
-#[launch]
-fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
-}
-*/
-
-#[rocket::main]
-async fn main() -> Result<(), rocket::Error> {
-    let prometheus: PrometheusMetrics = PrometheusMetrics::new();
-
-    let _rocket = rocket::build()
-        .attach(prometheus.clone())
-        .mount("/", routes![index, delay, blocking_readme])
-        .mount("/metrics", prometheus)
-        .launch()
-        .await?;
-
-    Ok(())
 }

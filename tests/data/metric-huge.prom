@@ -1,0 +1,1145 @@
+# HELP karen_requests_in_progress amount of requests currently processed
+# TYPE karen_requests_in_progress gauge
+karen_requests_in_progress{namespace="prod",} 1.0
+# HELP karen_index_variant_count variant count in index
+# TYPE karen_index_variant_count gauge
+karen_index_variant_count{namespace="prod",} 3777.0
+# HELP karen_rerank_request_error_count_total number of failed rerank requests
+# TYPE karen_rerank_request_error_count_total counter
+# HELP jvm_gc_collection_millis Garbage collecting times.
+# TYPE jvm_gc_collection_millis histogram
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="10.0",namespace="prod",} 265.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="50.0",namespace="prod",} 298.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="100.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="150.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="300.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="500.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="1000.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="2000.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="5000.0",namespace="prod",} 299.0
+jvm_gc_collection_millis_bucket{gc="G1 Young Generation",le="+Inf",namespace="prod",} 299.0
+jvm_gc_collection_millis_count{gc="G1 Young Generation",namespace="prod",} 299.0
+jvm_gc_collection_millis_sum{gc="G1 Young Generation",namespace="prod",} 2312.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="10.0",namespace="prod",} 89.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="50.0",namespace="prod",} 173.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="100.0",namespace="prod",} 175.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="150.0",namespace="prod",} 176.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="300.0",namespace="prod",} 176.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="500.0",namespace="prod",} 176.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="1000.0",namespace="prod",} 176.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="2000.0",namespace="prod",} 176.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="5000.0",namespace="prod",} 176.0
+jvm_gc_collection_millis_bucket{gc="G1 Concurrent GC",le="+Inf",namespace="prod",} 176.0
+jvm_gc_collection_millis_count{gc="G1 Concurrent GC",namespace="prod",} 176.0
+jvm_gc_collection_millis_sum{gc="G1 Concurrent GC",namespace="prod",} 2055.0
+# HELP karen_cold_start_time millis took to perform complete cold start
+# TYPE karen_cold_start_time gauge
+karen_cold_start_time{namespace="prod",} 10.412080261
+# HELP system_memory_limit_bytes Memory limit in bytes.
+# TYPE system_memory_limit_bytes gauge
+system_memory_limit_bytes{namespace="prod",} 0.0
+# HELP karen_content_total_seconds seconds to do a full request
+# TYPE karen_content_total_seconds summary
+karen_content_total_seconds{quantile="0.3",namespace="prod",} 0.00118572
+karen_content_total_seconds{quantile="0.5",namespace="prod",} 0.00118572
+karen_content_total_seconds{quantile="0.9",namespace="prod",} 0.001365428
+karen_content_total_seconds{quantile="0.95",namespace="prod",} 0.001365428
+karen_content_total_seconds{quantile="0.98",namespace="prod",} 0.001365428
+karen_content_total_seconds{quantile="0.99",namespace="prod",} 0.001365428
+karen_content_total_seconds_count{namespace="prod",} 271.0
+karen_content_total_seconds_sum{namespace="prod",} 0.35967675900000023
+# HELP karen_content_index_size_bytes index size in bytes
+# TYPE karen_content_index_size_bytes gauge
+karen_content_index_size_bytes{namespace="prod",} 236111.0
+# HELP karen_index_size_bytes index size in bytes
+# TYPE karen_index_size_bytes gauge
+karen_index_size_bytes{namespace="prod",} 8489198.0
+# HELP jvm_info VM version info
+# TYPE jvm_info gauge
+jvm_info{runtime="Java(TM) SE Runtime Environment",vendor="Oracle Corporation",version="21.0.1+12-LTS-29",namespace="prod",} 1.0
+# HELP karen_rerank_kendall_coeff_base KRR for response
+# TYPE karen_rerank_kendall_coeff_base summary
+karen_rerank_kendall_coeff_base{ranker="wanda",quantile="0.3",namespace="prod",} NaN
+karen_rerank_kendall_coeff_base{ranker="wanda",quantile="0.5",namespace="prod",} NaN
+karen_rerank_kendall_coeff_base{ranker="wanda",quantile="0.9",namespace="prod",} NaN
+karen_rerank_kendall_coeff_base{ranker="wanda",quantile="0.95",namespace="prod",} NaN
+karen_rerank_kendall_coeff_base{ranker="wanda",quantile="0.98",namespace="prod",} NaN
+karen_rerank_kendall_coeff_base{ranker="wanda",quantile="0.99",namespace="prod",} NaN
+karen_rerank_kendall_coeff_base_count{ranker="wanda",namespace="prod",} 141.0
+karen_rerank_kendall_coeff_base_sum{ranker="wanda",namespace="prod",} 141.0
+# HELP karen_io_iops number of IO write operations per second
+# TYPE karen_io_iops gauge
+karen_io_iops{direction="read",namespace="prod",} 1629263.0
+karen_io_iops{direction="write",namespace="prod",} 1051268.0
+# HELP karen_warmup_time millis took to warmup karen
+# TYPE karen_warmup_time gauge
+karen_warmup_time{namespace="prod",} 1.956032561
+# HELP karen_health_search health search query timing
+# TYPE karen_health_search gauge
+karen_health_search{namespace="prod",} 0.038760552
+# HELP karen_product_search_field_count number of search fields in request
+# TYPE karen_product_search_field_count summary
+karen_product_search_field_count{quantile="0.3",namespace="prod",} 37.0
+karen_product_search_field_count{quantile="0.5",namespace="prod",} 37.0
+karen_product_search_field_count{quantile="0.9",namespace="prod",} 37.0
+karen_product_search_field_count{quantile="0.95",namespace="prod",} 37.0
+karen_product_search_field_count{quantile="0.98",namespace="prod",} 37.0
+karen_product_search_field_count{quantile="0.99",namespace="prod",} 37.0
+karen_product_search_field_count_count{namespace="prod",} 8505.0
+karen_product_search_field_count_sum{namespace="prod",} 313613.0
+# HELP karen_content_product_matches_count number of products matched
+# TYPE karen_content_product_matches_count summary
+karen_content_product_matches_count{quantile="0.3",namespace="prod",} 42.0
+karen_content_product_matches_count{quantile="0.5",namespace="prod",} 42.0
+karen_content_product_matches_count{quantile="0.9",namespace="prod",} 57.0
+karen_content_product_matches_count{quantile="0.95",namespace="prod",} 57.0
+karen_content_product_matches_count{quantile="0.98",namespace="prod",} 57.0
+karen_content_product_matches_count{quantile="0.99",namespace="prod",} 57.0
+karen_content_product_matches_count_count{namespace="prod",} 271.0
+karen_content_product_matches_count_sum{namespace="prod",} 9153.0
+# HELP karen_index_document_count product count in index
+# TYPE karen_index_document_count gauge
+karen_index_document_count{namespace="prod",} 1009.0
+# HELP karen_product_seconds query timing
+# TYPE karen_product_seconds summary
+karen_product_seconds{stage="rerank_response",quantile="0.3",namespace="prod",} NaN
+karen_product_seconds{stage="rerank_response",quantile="0.5",namespace="prod",} NaN
+karen_product_seconds{stage="rerank_response",quantile="0.9",namespace="prod",} NaN
+karen_product_seconds{stage="rerank_response",quantile="0.95",namespace="prod",} NaN
+karen_product_seconds{stage="rerank_response",quantile="0.98",namespace="prod",} NaN
+karen_product_seconds{stage="rerank_response",quantile="0.99",namespace="prod",} NaN
+karen_product_seconds_count{stage="rerank_response",namespace="prod",} 144.0
+karen_product_seconds_sum{stage="rerank_response",namespace="prod",} 0.13210262800000003
+karen_product_seconds{stage="rerank",quantile="0.3",namespace="prod",} NaN
+karen_product_seconds{stage="rerank",quantile="0.5",namespace="prod",} NaN
+karen_product_seconds{stage="rerank",quantile="0.9",namespace="prod",} NaN
+karen_product_seconds{stage="rerank",quantile="0.95",namespace="prod",} NaN
+karen_product_seconds{stage="rerank",quantile="0.98",namespace="prod",} NaN
+karen_product_seconds{stage="rerank",quantile="0.99",namespace="prod",} NaN
+karen_product_seconds_count{stage="rerank",namespace="prod",} 158.0
+karen_product_seconds_sum{stage="rerank",namespace="prod",} 2.044975091000001
+karen_product_seconds{stage="fetch",quantile="0.3",namespace="prod",} 4.25924E-4
+karen_product_seconds{stage="fetch",quantile="0.5",namespace="prod",} 4.73192E-4
+karen_product_seconds{stage="fetch",quantile="0.9",namespace="prod",} 0.001326166
+karen_product_seconds{stage="fetch",quantile="0.95",namespace="prod",} 0.001326166
+karen_product_seconds{stage="fetch",quantile="0.98",namespace="prod",} 0.001326166
+karen_product_seconds{stage="fetch",quantile="0.99",namespace="prod",} 0.001326166
+karen_product_seconds_count{stage="fetch",namespace="prod",} 8828.0
+karen_product_seconds_sum{stage="fetch",namespace="prod",} 5.505321968999994
+karen_product_seconds{stage="local_request",quantile="0.3",namespace="prod",} 4.34832E-4
+karen_product_seconds{stage="local_request",quantile="0.5",namespace="prod",} 4.49267E-4
+karen_product_seconds{stage="local_request",quantile="0.9",namespace="prod",} 0.001058425
+karen_product_seconds{stage="local_request",quantile="0.95",namespace="prod",} 0.001058425
+karen_product_seconds{stage="local_request",quantile="0.98",namespace="prod",} 0.001058425
+karen_product_seconds{stage="local_request",quantile="0.99",namespace="prod",} 0.001058425
+karen_product_seconds_count{stage="local_request",namespace="prod",} 8829.0
+karen_product_seconds_sum{stage="local_request",namespace="prod",} 6.5105349070000065
+karen_product_seconds{stage="total",quantile="0.3",namespace="prod",} 0.00250283
+karen_product_seconds{stage="total",quantile="0.5",namespace="prod",} 0.002724991
+karen_product_seconds{stage="total",quantile="0.9",namespace="prod",} 0.031319268
+karen_product_seconds{stage="total",quantile="0.95",namespace="prod",} 0.031319268
+karen_product_seconds{stage="total",quantile="0.98",namespace="prod",} 0.031319268
+karen_product_seconds{stage="total",quantile="0.99",namespace="prod",} 0.031319268
+karen_product_seconds_count{stage="total",namespace="prod",} 8637.0
+karen_product_seconds_sum{stage="total",namespace="prod",} 32.201649089
+karen_product_seconds{stage="telemetry",quantile="0.3",namespace="prod",} 0.001369394
+karen_product_seconds{stage="telemetry",quantile="0.5",namespace="prod",} 0.001369394
+karen_product_seconds{stage="telemetry",quantile="0.9",namespace="prod",} 0.001369394
+karen_product_seconds{stage="telemetry",quantile="0.95",namespace="prod",} 0.001369394
+karen_product_seconds{stage="telemetry",quantile="0.98",namespace="prod",} 0.001369394
+karen_product_seconds{stage="telemetry",quantile="0.99",namespace="prod",} 0.001369394
+karen_product_seconds_count{stage="telemetry",namespace="prod",} 536.0
+karen_product_seconds_sum{stage="telemetry",namespace="prod",} 0.7730554070000004
+karen_product_seconds{stage="facet",quantile="0.3",namespace="prod",} 5.60674E-4
+karen_product_seconds{stage="facet",quantile="0.5",namespace="prod",} 5.83077E-4
+karen_product_seconds{stage="facet",quantile="0.9",namespace="prod",} 0.001167958
+karen_product_seconds{stage="facet",quantile="0.95",namespace="prod",} 0.001167958
+karen_product_seconds{stage="facet",quantile="0.98",namespace="prod",} 0.001167958
+karen_product_seconds{stage="facet",quantile="0.99",namespace="prod",} 0.001167958
+karen_product_seconds_count{stage="facet",namespace="prod",} 8828.0
+karen_product_seconds_sum{stage="facet",namespace="prod",} 6.3351500409999755
+karen_product_seconds{stage="search",quantile="0.3",namespace="prod",} 9.4494E-4
+karen_product_seconds{stage="search",quantile="0.5",namespace="prod",} 0.001191156
+karen_product_seconds{stage="search",quantile="0.9",namespace="prod",} 0.029550792
+karen_product_seconds{stage="search",quantile="0.95",namespace="prod",} 0.029550792
+karen_product_seconds{stage="search",quantile="0.98",namespace="prod",} 0.029550792
+karen_product_seconds{stage="search",quantile="0.99",namespace="prod",} 0.029550792
+karen_product_seconds_count{stage="search",namespace="prod",} 8828.0
+karen_product_seconds_sum{stage="search",namespace="prod",} 9.988721701
+# HELP karen_product_histogram_seconds query timing
+# TYPE karen_product_histogram_seconds histogram
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.05",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.1",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.2",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.3",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.4",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.5",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.6",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.7",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.8",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="0.9",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="1.0",namespace="prod",} 144.0
+karen_product_histogram_seconds_bucket{stage="rerank_response",le="+Inf",namespace="prod",} 144.0
+karen_product_histogram_seconds_count{stage="rerank_response",namespace="prod",} 144.0
+karen_product_histogram_seconds_sum{stage="rerank_response",namespace="prod",} 0.13215337
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.05",namespace="prod",} 157.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.1",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.2",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.3",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.4",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.5",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.6",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.7",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.8",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="0.9",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="1.0",namespace="prod",} 158.0
+karen_product_histogram_seconds_bucket{stage="rerank",le="+Inf",namespace="prod",} 158.0
+karen_product_histogram_seconds_count{stage="rerank",namespace="prod",} 158.0
+karen_product_histogram_seconds_sum{stage="rerank",namespace="prod",} 2.0464219250000006
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.05",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.1",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.2",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.3",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.4",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.5",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.6",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.7",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.8",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="0.9",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="1.0",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="fetch",le="+Inf",namespace="prod",} 8828.0
+karen_product_histogram_seconds_count{stage="fetch",namespace="prod",} 8828.0
+karen_product_histogram_seconds_sum{stage="fetch",namespace="prod",} 5.536082276999996
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.05",namespace="prod",} 8821.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.1",namespace="prod",} 8826.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.2",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.3",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.4",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.5",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.6",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.7",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.8",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="0.9",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="1.0",namespace="prod",} 8829.0
+karen_product_histogram_seconds_bucket{stage="local_request",le="+Inf",namespace="prod",} 8829.0
+karen_product_histogram_seconds_count{stage="local_request",namespace="prod",} 8829.0
+karen_product_histogram_seconds_sum{stage="local_request",namespace="prod",} 6.534865432000002
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.05",namespace="prod",} 535.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.1",namespace="prod",} 535.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.2",namespace="prod",} 535.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.3",namespace="prod",} 535.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.4",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.5",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.6",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.7",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.8",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="0.9",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="1.0",namespace="prod",} 536.0
+karen_product_histogram_seconds_bucket{stage="telemetry",le="+Inf",namespace="prod",} 536.0
+karen_product_histogram_seconds_count{stage="telemetry",namespace="prod",} 536.0
+karen_product_histogram_seconds_sum{stage="telemetry",namespace="prod",} 0.77426386
+karen_product_histogram_seconds_bucket{stage="facet",le="0.05",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.1",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.2",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.3",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.4",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.5",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.6",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.7",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.8",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="0.9",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="1.0",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="facet",le="+Inf",namespace="prod",} 8828.0
+karen_product_histogram_seconds_count{stage="facet",namespace="prod",} 8828.0
+karen_product_histogram_seconds_sum{stage="facet",namespace="prod",} 6.359059820999974
+karen_product_histogram_seconds_bucket{stage="search",le="0.05",namespace="prod",} 8827.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.1",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.2",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.3",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.4",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.5",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.6",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.7",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.8",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="0.9",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="1.0",namespace="prod",} 8828.0
+karen_product_histogram_seconds_bucket{stage="search",le="+Inf",namespace="prod",} 8828.0
+karen_product_histogram_seconds_count{stage="search",namespace="prod",} 8828.0
+karen_product_histogram_seconds_sum{stage="search",namespace="prod",} 10.028253516999948
+# HELP karen_suggest_total_seconds time to run the query
+# TYPE karen_suggest_total_seconds summary
+karen_suggest_total_seconds{quantile="0.3",namespace="prod",} 0.072954662
+karen_suggest_total_seconds{quantile="0.5",namespace="prod",} 0.072954662
+karen_suggest_total_seconds{quantile="0.9",namespace="prod",} 0.072954662
+karen_suggest_total_seconds{quantile="0.95",namespace="prod",} 0.072954662
+karen_suggest_total_seconds{quantile="0.98",namespace="prod",} 0.072954662
+karen_suggest_total_seconds{quantile="0.99",namespace="prod",} 0.072954662
+karen_suggest_total_seconds_count{namespace="prod",} 135.0
+karen_suggest_total_seconds_sum{namespace="prod",} 2.440769156000001
+# HELP karen_suggest_hasresults_total_elements no-results-cache total elements
+# TYPE karen_suggest_hasresults_total_elements gauge
+karen_suggest_hasresults_total_elements{namespace="prod",} 74.0
+# HELP karen_telemetry_kinesis_latency time to write to kinesis
+# TYPE karen_telemetry_kinesis_latency summary
+karen_telemetry_kinesis_latency{quantile="0.3",namespace="prod",} NaN
+karen_telemetry_kinesis_latency{quantile="0.5",namespace="prod",} NaN
+karen_telemetry_kinesis_latency{quantile="0.9",namespace="prod",} NaN
+karen_telemetry_kinesis_latency{quantile="0.95",namespace="prod",} NaN
+karen_telemetry_kinesis_latency{quantile="0.98",namespace="prod",} NaN
+karen_telemetry_kinesis_latency{quantile="0.99",namespace="prod",} NaN
+karen_telemetry_kinesis_latency_count{namespace="prod",} 99.0
+karen_telemetry_kinesis_latency_sum{namespace="prod",} 18.839182711999996
+# HELP karen_recommend_request_succeeded_total total recommend requests succeeded
+# TYPE karen_recommend_request_succeeded_total counter
+karen_recommend_request_succeeded_total{namespace="prod",} 0.0
+# HELP jvm_threads_current Current thread count of a JVM
+# TYPE jvm_threads_current gauge
+jvm_threads_current{namespace="prod",} 103.0
+# HELP jvm_threads_daemon Daemon thread count of a JVM
+# TYPE jvm_threads_daemon gauge
+jvm_threads_daemon{namespace="prod",} 39.0
+# HELP jvm_threads_peak Peak thread count of a JVM
+# TYPE jvm_threads_peak gauge
+jvm_threads_peak{namespace="prod",} 125.0
+# HELP jvm_threads_started_total Started thread count of a JVM
+# TYPE jvm_threads_started_total counter
+jvm_threads_started_total{namespace="prod",} 1595.0
+# HELP jvm_threads_deadlocked Cycles of JVM-threads that are in deadlock waiting to acquire object monitors or ownable synchronizers
+# TYPE jvm_threads_deadlocked gauge
+jvm_threads_deadlocked{namespace="prod",} 0.0
+# HELP jvm_threads_deadlocked_monitor Cycles of JVM-threads that are in deadlock waiting to acquire object monitors
+# TYPE jvm_threads_deadlocked_monitor gauge
+jvm_threads_deadlocked_monitor{namespace="prod",} 0.0
+# HELP jvm_threads_state Current count of threads by state
+# TYPE jvm_threads_state gauge
+jvm_threads_state{state="TERMINATED",namespace="prod",} 0.0
+jvm_threads_state{state="NEW",namespace="prod",} 0.0
+jvm_threads_state{state="BLOCKED",namespace="prod",} 0.0
+jvm_threads_state{state="TIMED_WAITING",namespace="prod",} 16.0
+jvm_threads_state{state="RUNNABLE",namespace="prod",} 21.0
+jvm_threads_state{state="WAITING",namespace="prod",} 66.0
+# HELP karen_variant_searcher_refresh variant serarcher refresh
+# TYPE karen_variant_searcher_refresh gauge
+karen_variant_searcher_refresh{namespace="prod",} 79.0
+# HELP karen_suggest_results_cache_hitrate suggest results cache hit rate
+# TYPE karen_suggest_results_cache_hitrate gauge
+karen_suggest_results_cache_hitrate{namespace="prod",} 0.16129032258064516
+# HELP karen_content_product_count number of products in the search response
+# TYPE karen_content_product_count summary
+karen_content_product_count{quantile="0.3",namespace="prod",} 5.0
+karen_content_product_count{quantile="0.5",namespace="prod",} 5.0
+karen_content_product_count{quantile="0.9",namespace="prod",} 6.0
+karen_content_product_count{quantile="0.95",namespace="prod",} 6.0
+karen_content_product_count{quantile="0.98",namespace="prod",} 6.0
+karen_content_product_count{quantile="0.99",namespace="prod",} 6.0
+karen_content_product_count_count{namespace="prod",} 271.0
+karen_content_product_count_sum{namespace="prod",} 1057.0
+# HELP karen_recommend_request_fallbacked_total total recommend requests fallbacked
+# TYPE karen_recommend_request_fallbacked_total counter
+karen_recommend_request_fallbacked_total{namespace="prod",} 0.0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total{namespace="prod",} 10973.08
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds{namespace="prod",} 1.709565195421E9
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds{namespace="prod",} 69.0
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds{namespace="prod",} 1048576.0
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes{namespace="prod",} 1.905270784E9
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes{namespace="prod",} 1.139216384E9
+# HELP karen_index_discovery_time millis took to discover the index
+# TYPE karen_index_discovery_time gauge
+karen_index_discovery_time{namespace="prod",} 0.893299043
+# HELP karen_product_query_term_count query term count
+# TYPE karen_product_query_term_count summary
+karen_product_query_term_count{quantile="0.3",namespace="prod",} 1.0
+karen_product_query_term_count{quantile="0.5",namespace="prod",} 1.0
+karen_product_query_term_count{quantile="0.9",namespace="prod",} 1.0
+karen_product_query_term_count{quantile="0.95",namespace="prod",} 1.0
+karen_product_query_term_count{quantile="0.98",namespace="prod",} 1.0
+karen_product_query_term_count{quantile="0.99",namespace="prod",} 1.0
+karen_product_query_term_count_count{namespace="prod",} 8505.0
+karen_product_query_term_count_sum{namespace="prod",} 8620.0
+# HELP karen_product_request_count_total total search requests made
+# TYPE karen_product_request_count_total counter
+karen_product_request_count_total{namespace="prod",} 8670.0
+# HELP karen_index_load_time millis took to load the index
+# TYPE karen_index_load_time gauge
+karen_index_load_time{namespace="prod",} 0.782195491
+# HELP jvm_buffer_pool_used_bytes Used bytes of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_bytes gauge
+jvm_buffer_pool_used_bytes{pool="mapped",namespace="prod",} 5902208.0
+jvm_buffer_pool_used_bytes{pool="direct",namespace="prod",} 3.9395186E7
+jvm_buffer_pool_used_bytes{pool="mapped - 'non-volatile memory'",namespace="prod",} 0.0
+# HELP jvm_buffer_pool_capacity_bytes Bytes capacity of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_capacity_bytes gauge
+jvm_buffer_pool_capacity_bytes{pool="mapped",namespace="prod",} 5902208.0
+jvm_buffer_pool_capacity_bytes{pool="direct",namespace="prod",} 3.9395184E7
+jvm_buffer_pool_capacity_bytes{pool="mapped - 'non-volatile memory'",namespace="prod",} 0.0
+# HELP jvm_buffer_pool_used_buffers Used buffers of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_buffers gauge
+jvm_buffer_pool_used_buffers{pool="mapped",namespace="prod",} 12.0
+jvm_buffer_pool_used_buffers{pool="direct",namespace="prod",} 93.0
+jvm_buffer_pool_used_buffers{pool="mapped - 'non-volatile memory'",namespace="prod",} 0.0
+# HELP karen_rerank_request_count_total number of rerank requests
+# TYPE karen_rerank_request_count_total counter
+karen_rerank_request_count_total{ranker="rerank",namespace="prod",} 158.0
+# HELP karen_suggest_hasresults_cache_refresh_total no-results-cache cache post-index reload refresh
+# TYPE karen_suggest_hasresults_cache_refresh_total counter
+karen_suggest_hasresults_cache_refresh_total{namespace="prod",} 68.0
+# HELP disk_read_operations Number of IO read operations per second.
+# TYPE disk_read_operations gauge
+disk_read_operations{namespace="prod",} 1629286.0
+# HELP disk_write_operations Number of IO write operations per second.
+# TYPE disk_write_operations gauge
+disk_write_operations{namespace="prod",} 1051285.0
+# HELP disk_read_bytes Number of bytes read directly from disk.
+# TYPE disk_read_bytes gauge
+disk_read_bytes{namespace="prod",} 28672.0
+# HELP disk_write_bytes Number of bytes written directly to disk.
+# TYPE disk_write_bytes gauge
+disk_write_bytes{namespace="prod",} 4.85945344E8
+# HELP disk_read_chars The number of bytes which this task has caused to be read from storage, not necessarily a physical one.
+# TYPE disk_read_chars gauge
+disk_read_chars{namespace="prod",} 1.239849184E9
+# HELP disk_write_chars The number of bytes which this task has caused to be written to the storage, not necessarily a physical one.
+# TYPE disk_write_chars gauge
+disk_write_chars{namespace="prod",} 5.11983335E8
+# HELP karen_io_sys_bytes number of io bytes per second on syscalls
+# TYPE karen_io_sys_bytes gauge
+karen_io_sys_bytes{direction="read",namespace="prod",} 1.239847389E9
+karen_io_sys_bytes{direction="write",namespace="prod",} 5.11982596E8
+# HELP karen_product_facet_count number of facets in request
+# TYPE karen_product_facet_count summary
+karen_product_facet_count{quantile="0.3",namespace="prod",} 9.0
+karen_product_facet_count{quantile="0.5",namespace="prod",} 9.0
+karen_product_facet_count{quantile="0.9",namespace="prod",} 9.0
+karen_product_facet_count{quantile="0.95",namespace="prod",} 9.0
+karen_product_facet_count{quantile="0.98",namespace="prod",} 9.0
+karen_product_facet_count{quantile="0.99",namespace="prod",} 9.0
+karen_product_facet_count_count{namespace="prod",} 8829.0
+karen_product_facet_count_sum{namespace="prod",} 77706.0
+# HELP karen_suggest_hasresults_eviction_count no-results-cache eviction count
+# TYPE karen_suggest_hasresults_eviction_count gauge
+karen_suggest_hasresults_eviction_count{namespace="prod",} 0.0
+# HELP karen_content_index_fetch_time millis took to fetch the index
+# TYPE karen_content_index_fetch_time gauge
+karen_content_index_fetch_time{namespace="prod",} 1.153638459
+# HELP karen_telemetry_event_batch_count_total total event batches submitted
+# TYPE karen_telemetry_event_batch_count_total counter
+karen_telemetry_event_batch_count_total{namespace="prod",} 198.0
+# HELP karen_product_filter_count number of filters in request
+# TYPE karen_product_filter_count summary
+karen_product_filter_count{quantile="0.3",namespace="prod",} 0.0
+karen_product_filter_count{quantile="0.5",namespace="prod",} 0.0
+karen_product_filter_count{quantile="0.9",namespace="prod",} 2.0
+karen_product_filter_count{quantile="0.95",namespace="prod",} 2.0
+karen_product_filter_count{quantile="0.98",namespace="prod",} 2.0
+karen_product_filter_count{quantile="0.99",namespace="prod",} 2.0
+karen_product_filter_count_count{namespace="prod",} 8829.0
+karen_product_filter_count_sum{namespace="prod",} 536.0
+# HELP karen_io_bytes number of io bytes per second hitting the disk
+# TYPE karen_io_bytes gauge
+karen_io_bytes{direction="read",namespace="prod",} 28672.0
+karen_io_bytes{direction="write",namespace="prod",} 4.85945344E8
+# HELP karen_suggest_action_seconds suggest action processing
+# TYPE karen_suggest_action_seconds summary
+karen_suggest_action_seconds{source="product_search",stage="total",quantile="0.3",namespace="prod",} 0.074482498
+karen_suggest_action_seconds{source="product_search",stage="total",quantile="0.5",namespace="prod",} 0.074482498
+karen_suggest_action_seconds{source="product_search",stage="total",quantile="0.9",namespace="prod",} 0.074482498
+karen_suggest_action_seconds{source="product_search",stage="total",quantile="0.95",namespace="prod",} 0.074482498
+karen_suggest_action_seconds{source="product_search",stage="total",quantile="0.98",namespace="prod",} 0.074482498
+karen_suggest_action_seconds{source="product_search",stage="total",quantile="0.99",namespace="prod",} 0.074482498
+karen_suggest_action_seconds_count{source="product_search",stage="total",namespace="prod",} 135.0
+karen_suggest_action_seconds_sum{source="product_search",stage="total",namespace="prod",} 4.468547008000003
+karen_suggest_action_seconds{source="top_suggestion",stage="total",quantile="0.3",namespace="prod",} 1.4635E-5
+karen_suggest_action_seconds{source="top_suggestion",stage="total",quantile="0.5",namespace="prod",} 1.4635E-5
+karen_suggest_action_seconds{source="top_suggestion",stage="total",quantile="0.9",namespace="prod",} 1.4635E-5
+karen_suggest_action_seconds{source="top_suggestion",stage="total",quantile="0.95",namespace="prod",} 1.4635E-5
+karen_suggest_action_seconds{source="top_suggestion",stage="total",quantile="0.98",namespace="prod",} 1.4635E-5
+karen_suggest_action_seconds{source="top_suggestion",stage="total",quantile="0.99",namespace="prod",} 1.4635E-5
+karen_suggest_action_seconds_count{source="top_suggestion",stage="total",namespace="prod",} 135.0
+karen_suggest_action_seconds_sum{source="top_suggestion",stage="total",namespace="prod",} 0.0011368820000000003
+# HELP karen_suggest_request_count_total total search requests made
+# TYPE karen_suggest_request_count_total counter
+karen_suggest_request_count_total{namespace="prod",} 76.0
+# HELP karen_suggestion_index_loading_delay_seconds The delay in seconds between creating the index by Maestro and reading it by karen
+# TYPE karen_suggestion_index_loading_delay_seconds gauge
+karen_suggestion_index_loading_delay_seconds{namespace="prod",} 0.0
+# HELP jvm_memory_objects_pending_finalization The number of objects waiting in the finalizer queue.
+# TYPE jvm_memory_objects_pending_finalization gauge
+jvm_memory_objects_pending_finalization{namespace="prod",} 0.0
+# HELP jvm_memory_bytes_used Used bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_used gauge
+jvm_memory_bytes_used{area="heap",namespace="prod",} 2.53722992E8
+jvm_memory_bytes_used{area="nonheap",namespace="prod",} 2.22747E8
+# HELP jvm_memory_bytes_committed Committed (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_committed gauge
+jvm_memory_bytes_committed{area="heap",namespace="prod",} 6.291456E8
+jvm_memory_bytes_committed{area="nonheap",namespace="prod",} 2.38747648E8
+# HELP jvm_memory_bytes_max Max (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_max gauge
+jvm_memory_bytes_max{area="heap",namespace="prod",} 6.291456E8
+jvm_memory_bytes_max{area="nonheap",namespace="prod",} 5.91396864E8
+# HELP jvm_memory_bytes_init Initial bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_init gauge
+jvm_memory_bytes_init{area="heap",namespace="prod",} 6.291456E8
+jvm_memory_bytes_init{area="nonheap",namespace="prod",} 7667712.0
+# HELP jvm_memory_pool_bytes_used Used bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_used gauge
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-nmethods'",namespace="prod",} 2554112.0
+jvm_memory_pool_bytes_used{pool="Metaspace",namespace="prod",} 1.53958696E8
+jvm_memory_pool_bytes_used{pool="CodeHeap 'profiled nmethods'",namespace="prod",} 2.428928E7
+jvm_memory_pool_bytes_used{pool="Compressed Class Space",namespace="prod",} 1.7498832E7
+jvm_memory_pool_bytes_used{pool="G1 Eden Space",namespace="prod",} 1.49946368E8
+jvm_memory_pool_bytes_used{pool="G1 Old Gen",namespace="prod",} 1.03103168E8
+jvm_memory_pool_bytes_used{pool="G1 Survivor Space",namespace="prod",} 673456.0
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-profiled nmethods'",namespace="prod",} 2.444608E7
+# HELP jvm_memory_pool_bytes_committed Committed bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_committed gauge
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-nmethods'",namespace="prod",} 2752512.0
+jvm_memory_pool_bytes_committed{pool="Metaspace",namespace="prod",} 1.54927104E8
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'profiled nmethods'",namespace="prod",} 3.8600704E7
+jvm_memory_pool_bytes_committed{pool="Compressed Class Space",namespace="prod",} 1.7956864E7
+jvm_memory_pool_bytes_committed{pool="G1 Eden Space",namespace="prod",} 3.95313152E8
+jvm_memory_pool_bytes_committed{pool="G1 Old Gen",namespace="prod",} 2.32783872E8
+jvm_memory_pool_bytes_committed{pool="G1 Survivor Space",namespace="prod",} 1048576.0
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-profiled nmethods'",namespace="prod",} 2.4510464E7
+# HELP jvm_memory_pool_bytes_max Max bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_max gauge
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-nmethods'",namespace="prod",} 5836800.0
+jvm_memory_pool_bytes_max{pool="Metaspace",namespace="prod",} 1.8874368E8
+jvm_memory_pool_bytes_max{pool="CodeHeap 'profiled nmethods'",namespace="prod",} 1.22908672E8
+jvm_memory_pool_bytes_max{pool="Compressed Class Space",namespace="prod",} 1.50994944E8
+jvm_memory_pool_bytes_max{pool="G1 Eden Space",namespace="prod",} -1.0
+jvm_memory_pool_bytes_max{pool="G1 Old Gen",namespace="prod",} 6.291456E8
+jvm_memory_pool_bytes_max{pool="G1 Survivor Space",namespace="prod",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-profiled nmethods'",namespace="prod",} 1.22912768E8
+# HELP jvm_memory_pool_bytes_init Initial bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_init gauge
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-nmethods'",namespace="prod",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Metaspace",namespace="prod",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'profiled nmethods'",namespace="prod",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Compressed Class Space",namespace="prod",} 0.0
+jvm_memory_pool_bytes_init{pool="G1 Eden Space",namespace="prod",} 3.145728E7
+jvm_memory_pool_bytes_init{pool="G1 Old Gen",namespace="prod",} 5.9768832E8
+jvm_memory_pool_bytes_init{pool="G1 Survivor Space",namespace="prod",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-profiled nmethods'",namespace="prod",} 2555904.0
+# HELP jvm_memory_pool_collection_used_bytes Used bytes after last collection of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_used_bytes gauge
+jvm_memory_pool_collection_used_bytes{pool="G1 Eden Space",namespace="prod",} 0.0
+jvm_memory_pool_collection_used_bytes{pool="G1 Old Gen",namespace="prod",} 1.03103168E8
+jvm_memory_pool_collection_used_bytes{pool="G1 Survivor Space",namespace="prod",} 673456.0
+# HELP jvm_memory_pool_collection_committed_bytes Committed after last collection bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_committed_bytes gauge
+jvm_memory_pool_collection_committed_bytes{pool="G1 Eden Space",namespace="prod",} 3.95313152E8
+jvm_memory_pool_collection_committed_bytes{pool="G1 Old Gen",namespace="prod",} 2.32783872E8
+jvm_memory_pool_collection_committed_bytes{pool="G1 Survivor Space",namespace="prod",} 1048576.0
+# HELP jvm_memory_pool_collection_max_bytes Max bytes after last collection of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_max_bytes gauge
+jvm_memory_pool_collection_max_bytes{pool="G1 Eden Space",namespace="prod",} -1.0
+jvm_memory_pool_collection_max_bytes{pool="G1 Old Gen",namespace="prod",} 6.291456E8
+jvm_memory_pool_collection_max_bytes{pool="G1 Survivor Space",namespace="prod",} -1.0
+# HELP jvm_memory_pool_collection_init_bytes Initial after last collection bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_collection_init_bytes gauge
+jvm_memory_pool_collection_init_bytes{pool="G1 Eden Space",namespace="prod",} 3.145728E7
+jvm_memory_pool_collection_init_bytes{pool="G1 Old Gen",namespace="prod",} 5.9768832E8
+jvm_memory_pool_collection_init_bytes{pool="G1 Survivor Space",namespace="prod",} 0.0
+# HELP karen_autocomplete_seconds time to do result processing
+# TYPE karen_autocomplete_seconds summary
+karen_autocomplete_seconds{source="content",stage="total",quantile="0.3",namespace="prod",} 0.002247038
+karen_autocomplete_seconds{source="content",stage="total",quantile="0.5",namespace="prod",} 0.002247038
+karen_autocomplete_seconds{source="content",stage="total",quantile="0.9",namespace="prod",} 0.002247038
+karen_autocomplete_seconds{source="content",stage="total",quantile="0.95",namespace="prod",} 0.002247038
+karen_autocomplete_seconds{source="content",stage="total",quantile="0.98",namespace="prod",} 0.002247038
+karen_autocomplete_seconds{source="content",stage="total",quantile="0.99",namespace="prod",} 0.002247038
+karen_autocomplete_seconds_count{source="content",stage="total",namespace="prod",} 135.0
+karen_autocomplete_seconds_sum{source="content",stage="total",namespace="prod",} 0.30745873199999996
+# HELP karen_rerank_response_latency rerank latency
+# TYPE karen_rerank_response_latency summary
+karen_rerank_response_latency{ranker="noop",quantile="0.3",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="noop",quantile="0.5",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="noop",quantile="0.9",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="noop",quantile="0.95",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="noop",quantile="0.98",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="noop",quantile="0.99",namespace="prod",} NaN
+karen_rerank_response_latency_count{ranker="noop",namespace="prod",} 3.0
+karen_rerank_response_latency_sum{ranker="noop",namespace="prod",} 1.0
+karen_rerank_response_latency{ranker="wanda",quantile="0.3",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="wanda",quantile="0.5",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="wanda",quantile="0.9",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="wanda",quantile="0.95",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="wanda",quantile="0.98",namespace="prod",} NaN
+karen_rerank_response_latency{ranker="wanda",quantile="0.99",namespace="prod",} NaN
+karen_rerank_response_latency_count{ranker="wanda",namespace="prod",} 141.0
+karen_rerank_response_latency_sum{ranker="wanda",namespace="prod",} 2009.0
+# HELP karen_recommend_request_failed_total total recommend requests failed
+# TYPE karen_recommend_request_failed_total counter
+karen_recommend_request_failed_total{namespace="prod",} 0.0
+# HELP karen_suggest_total_seconds_histogram time to run the query
+# TYPE karen_suggest_total_seconds_histogram histogram
+karen_suggest_total_seconds_histogram_bucket{le="0.05",namespace="prod",} 117.0
+karen_suggest_total_seconds_histogram_bucket{le="0.1",namespace="prod",} 133.0
+karen_suggest_total_seconds_histogram_bucket{le="0.2",namespace="prod",} 134.0
+karen_suggest_total_seconds_histogram_bucket{le="0.3",namespace="prod",} 134.0
+karen_suggest_total_seconds_histogram_bucket{le="0.4",namespace="prod",} 134.0
+karen_suggest_total_seconds_histogram_bucket{le="0.5",namespace="prod",} 134.0
+karen_suggest_total_seconds_histogram_bucket{le="0.6",namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_bucket{le="0.7",namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_bucket{le="0.8",namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_bucket{le="0.9",namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_bucket{le="1.0",namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_bucket{le="+Inf",namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_count{namespace="prod",} 135.0
+karen_suggest_total_seconds_histogram_sum{namespace="prod",} 2.438524353000002
+# HELP jvm_memory_pool_allocated_bytes_total Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.
+# TYPE jvm_memory_pool_allocated_bytes_total counter
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'profiled nmethods'",namespace="prod",} 6.2416128E7
+jvm_memory_pool_allocated_bytes_total{pool="G1 Old Gen",namespace="prod",} 1.9842080152E10
+jvm_memory_pool_allocated_bytes_total{pool="G1 Eden Space",namespace="prod",} 8.7469064176E10
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'non-profiled nmethods'",namespace="prod",} 3.4667392E7
+jvm_memory_pool_allocated_bytes_total{pool="G1 Survivor Space",namespace="prod",} 1.16017888E8
+jvm_memory_pool_allocated_bytes_total{pool="Compressed Class Space",namespace="prod",} 1.7614544E7
+jvm_memory_pool_allocated_bytes_total{pool="Metaspace",namespace="prod",} 1.54467216E8
+jvm_memory_pool_allocated_bytes_total{pool="CodeHeap 'non-nmethods'",namespace="prod",} 2741248.0
+# HELP karen_suggest_hasresults_cache_hitrate no-results-cache hit rate
+# TYPE karen_suggest_hasresults_cache_hitrate gauge
+karen_suggest_hasresults_cache_hitrate{namespace="prod",} 0.6912568306010929
+# HELP karen_index_loader_refresh index loader refresh
+# TYPE karen_index_loader_refresh gauge
+karen_index_loader_refresh{namespace="prod",} 68.0
+# HELP karen_requests_latency_histogram karen requests latency
+# TYPE karen_requests_latency_histogram histogram
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.05",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.1",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.2",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.3",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.4",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.5",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.6",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.7",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.8",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="0.9",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="1.0",namespace="prod",} 194830.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health",le="+Inf",namespace="prod",} 194830.0
+karen_requests_latency_histogram_count{requestType="health",category="health",namespace="prod",} 194830.0
+karen_requests_latency_histogram_sum{requestType="health",category="health",namespace="prod",} 23.73650777600017
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.05",namespace="prod",} 144.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.1",namespace="prod",} 151.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.2",namespace="prod",} 152.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.3",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.4",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.5",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.6",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.7",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.8",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="0.9",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="1.0",namespace="prod",} 153.0
+karen_requests_latency_histogram_bucket{requestType="collection",category="collection",le="+Inf",namespace="prod",} 153.0
+karen_requests_latency_histogram_count{requestType="collection",category="collection",namespace="prod",} 153.0
+karen_requests_latency_histogram_sum{requestType="collection",category="collection",namespace="prod",} 4.230967141999999
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.05",namespace="prod",} 0.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.1",namespace="prod",} 0.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.2",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.3",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.4",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.5",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.6",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.7",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.8",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="0.9",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="1.0",namespace="prod",} 1.0
+karen_requests_latency_histogram_bucket{requestType="health",category="health_search",le="+Inf",namespace="prod",} 1.0
+karen_requests_latency_histogram_count{requestType="health",category="health_search",namespace="prod",} 1.0
+karen_requests_latency_histogram_sum{requestType="health",category="health_search",namespace="prod",} 0.115826855
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.05",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.1",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.2",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.3",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.4",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.5",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.6",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.7",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.8",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="0.9",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="1.0",namespace="prod",} 8.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="viewed",le="+Inf",namespace="prod",} 8.0
+karen_requests_latency_histogram_count{requestType="recommend",category="viewed",namespace="prod",} 8.0
+karen_requests_latency_histogram_sum{requestType="recommend",category="viewed",namespace="prod",} 0.12355512999999999
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.05",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.1",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.2",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.3",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.4",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.5",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.6",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.7",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.8",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="0.9",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="1.0",namespace="prod",} 13.0
+karen_requests_latency_histogram_bucket{requestType="content",category="content",le="+Inf",namespace="prod",} 13.0
+karen_requests_latency_histogram_count{requestType="content",category="content",namespace="prod",} 13.0
+karen_requests_latency_histogram_sum{requestType="content",category="content",namespace="prod",} 0.055523627000000006
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.05",namespace="prod",} 52.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.1",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.2",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.3",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.4",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.5",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.6",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.7",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.8",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="0.9",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="1.0",namespace="prod",} 53.0
+karen_requests_latency_histogram_bucket{requestType="recommend",category="trending",le="+Inf",namespace="prod",} 53.0
+karen_requests_latency_histogram_count{requestType="recommend",category="trending",namespace="prod",} 53.0
+karen_requests_latency_histogram_sum{requestType="recommend",category="trending",namespace="prod",} 0.5330505059999998
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.05",namespace="prod",} 102.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.1",namespace="prod",} 124.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.2",namespace="prod",} 132.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.3",namespace="prod",} 134.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.4",namespace="prod",} 134.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.5",namespace="prod",} 134.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.6",namespace="prod",} 134.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.7",namespace="prod",} 135.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.8",namespace="prod",} 135.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="0.9",namespace="prod",} 135.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="1.0",namespace="prod",} 135.0
+karen_requests_latency_histogram_bucket{requestType="suggest",category="suggest",le="+Inf",namespace="prod",} 135.0
+karen_requests_latency_histogram_count{requestType="suggest",category="suggest",namespace="prod",} 135.0
+karen_requests_latency_histogram_sum{requestType="suggest",category="suggest",namespace="prod",} 5.328263922000005
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.05",namespace="prod",} 8468.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.1",namespace="prod",} 8480.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.2",namespace="prod",} 8481.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.3",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.4",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.5",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.6",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.7",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.8",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="0.9",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="1.0",namespace="prod",} 8484.0
+karen_requests_latency_histogram_bucket{requestType="search",category="search",le="+Inf",namespace="prod",} 8484.0
+karen_requests_latency_histogram_count{requestType="search",category="search",namespace="prod",} 8484.0
+karen_requests_latency_histogram_sum{requestType="search",category="search",namespace="prod",} 47.563520332000024
+# HELP karen_rerank_kendall_coeff_bins KRR for response
+# TYPE karen_rerank_kendall_coeff_bins summary
+karen_rerank_kendall_coeff_bins{ranker="wanda",quantile="0.3",namespace="prod",} NaN
+karen_rerank_kendall_coeff_bins{ranker="wanda",quantile="0.5",namespace="prod",} NaN
+karen_rerank_kendall_coeff_bins{ranker="wanda",quantile="0.9",namespace="prod",} NaN
+karen_rerank_kendall_coeff_bins{ranker="wanda",quantile="0.95",namespace="prod",} NaN
+karen_rerank_kendall_coeff_bins{ranker="wanda",quantile="0.98",namespace="prod",} NaN
+karen_rerank_kendall_coeff_bins{ranker="wanda",quantile="0.99",namespace="prod",} NaN
+karen_rerank_kendall_coeff_bins_count{ranker="wanda",namespace="prod",} 141.0
+karen_rerank_kendall_coeff_bins_sum{ranker="wanda",namespace="prod",} 141.0
+# HELP karen_suggest_has_results_one_seconds time to check if there's some search results for a single suggestion
+# TYPE karen_suggest_has_results_one_seconds summary
+karen_suggest_has_results_one_seconds{quantile="0.3",namespace="prod",} 5.44289E-4
+karen_suggest_has_results_one_seconds{quantile="0.5",namespace="prod",} 7.46387E-4
+karen_suggest_has_results_one_seconds{quantile="0.9",namespace="prod",} 0.001426349
+karen_suggest_has_results_one_seconds{quantile="0.95",namespace="prod",} 0.001691018
+karen_suggest_has_results_one_seconds{quantile="0.98",namespace="prod",} 0.002062574
+karen_suggest_has_results_one_seconds{quantile="0.99",namespace="prod",} 0.002176634
+karen_suggest_has_results_one_seconds_count{namespace="prod",} 2701.0
+karen_suggest_has_results_one_seconds_sum{namespace="prod",} 1.7148770799999975
+# HELP karen_suggestion_index_load_time millis took to load the suggestion index
+# TYPE karen_suggestion_index_load_time gauge
+karen_suggestion_index_load_time{namespace="prod",} 2.1532E-5
+# HELP karen_requests_latency karen requests latency
+# TYPE karen_requests_latency summary
+karen_requests_latency{requestType="health",category="health",quantile="0.3",namespace="prod",} 1.12767E-4
+karen_requests_latency{requestType="health",category="health",quantile="0.5",namespace="prod",} 1.21273E-4
+karen_requests_latency{requestType="health",category="health",quantile="0.9",namespace="prod",} 1.60701E-4
+karen_requests_latency{requestType="health",category="health",quantile="0.95",namespace="prod",} 1.68996E-4
+karen_requests_latency{requestType="health",category="health",quantile="0.98",namespace="prod",} 1.97693E-4
+karen_requests_latency{requestType="health",category="health",quantile="0.99",namespace="prod",} 2.34519E-4
+karen_requests_latency_count{requestType="health",category="health",namespace="prod",} 194830.0
+karen_requests_latency_sum{requestType="health",category="health",namespace="prod",} 23.736507776000174
+karen_requests_latency{requestType="collection",category="collection",quantile="0.3",namespace="prod",} NaN
+karen_requests_latency{requestType="collection",category="collection",quantile="0.5",namespace="prod",} NaN
+karen_requests_latency{requestType="collection",category="collection",quantile="0.9",namespace="prod",} NaN
+karen_requests_latency{requestType="collection",category="collection",quantile="0.95",namespace="prod",} NaN
+karen_requests_latency{requestType="collection",category="collection",quantile="0.98",namespace="prod",} NaN
+karen_requests_latency{requestType="collection",category="collection",quantile="0.99",namespace="prod",} NaN
+karen_requests_latency_count{requestType="collection",category="collection",namespace="prod",} 153.0
+karen_requests_latency_sum{requestType="collection",category="collection",namespace="prod",} 4.230967141999999
+karen_requests_latency{requestType="health",category="health_search",quantile="0.3",namespace="prod",} NaN
+karen_requests_latency{requestType="health",category="health_search",quantile="0.5",namespace="prod",} NaN
+karen_requests_latency{requestType="health",category="health_search",quantile="0.9",namespace="prod",} NaN
+karen_requests_latency{requestType="health",category="health_search",quantile="0.95",namespace="prod",} NaN
+karen_requests_latency{requestType="health",category="health_search",quantile="0.98",namespace="prod",} NaN
+karen_requests_latency{requestType="health",category="health_search",quantile="0.99",namespace="prod",} NaN
+karen_requests_latency_count{requestType="health",category="health_search",namespace="prod",} 1.0
+karen_requests_latency_sum{requestType="health",category="health_search",namespace="prod",} 0.115826855
+karen_requests_latency{requestType="recommend",category="viewed",quantile="0.3",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="viewed",quantile="0.5",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="viewed",quantile="0.9",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="viewed",quantile="0.95",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="viewed",quantile="0.98",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="viewed",quantile="0.99",namespace="prod",} NaN
+karen_requests_latency_count{requestType="recommend",category="viewed",namespace="prod",} 8.0
+karen_requests_latency_sum{requestType="recommend",category="viewed",namespace="prod",} 0.12355512999999999
+karen_requests_latency{requestType="content",category="content",quantile="0.3",namespace="prod",} NaN
+karen_requests_latency{requestType="content",category="content",quantile="0.5",namespace="prod",} NaN
+karen_requests_latency{requestType="content",category="content",quantile="0.9",namespace="prod",} NaN
+karen_requests_latency{requestType="content",category="content",quantile="0.95",namespace="prod",} NaN
+karen_requests_latency{requestType="content",category="content",quantile="0.98",namespace="prod",} NaN
+karen_requests_latency{requestType="content",category="content",quantile="0.99",namespace="prod",} NaN
+karen_requests_latency_count{requestType="content",category="content",namespace="prod",} 13.0
+karen_requests_latency_sum{requestType="content",category="content",namespace="prod",} 0.055523627000000006
+karen_requests_latency{requestType="recommend",category="trending",quantile="0.3",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="trending",quantile="0.5",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="trending",quantile="0.9",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="trending",quantile="0.95",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="trending",quantile="0.98",namespace="prod",} NaN
+karen_requests_latency{requestType="recommend",category="trending",quantile="0.99",namespace="prod",} NaN
+karen_requests_latency_count{requestType="recommend",category="trending",namespace="prod",} 53.0
+karen_requests_latency_sum{requestType="recommend",category="trending",namespace="prod",} 0.5330505059999998
+karen_requests_latency{requestType="suggest",category="suggest",quantile="0.3",namespace="prod",} 0.081070608
+karen_requests_latency{requestType="suggest",category="suggest",quantile="0.5",namespace="prod",} 0.081070608
+karen_requests_latency{requestType="suggest",category="suggest",quantile="0.9",namespace="prod",} 0.081070608
+karen_requests_latency{requestType="suggest",category="suggest",quantile="0.95",namespace="prod",} 0.081070608
+karen_requests_latency{requestType="suggest",category="suggest",quantile="0.98",namespace="prod",} 0.081070608
+karen_requests_latency{requestType="suggest",category="suggest",quantile="0.99",namespace="prod",} 0.081070608
+karen_requests_latency_count{requestType="suggest",category="suggest",namespace="prod",} 135.0
+karen_requests_latency_sum{requestType="suggest",category="suggest",namespace="prod",} 5.328263922000005
+karen_requests_latency{requestType="search",category="search",quantile="0.3",namespace="prod",} 0.004243098
+karen_requests_latency{requestType="search",category="search",quantile="0.5",namespace="prod",} 0.004497556
+karen_requests_latency{requestType="search",category="search",quantile="0.9",namespace="prod",} 0.033029157
+karen_requests_latency{requestType="search",category="search",quantile="0.95",namespace="prod",} 0.033029157
+karen_requests_latency{requestType="search",category="search",quantile="0.98",namespace="prod",} 0.033029157
+karen_requests_latency{requestType="search",category="search",quantile="0.99",namespace="prod",} 0.033029157
+karen_requests_latency_count{requestType="search",category="search",namespace="prod",} 8484.0
+karen_requests_latency_sum{requestType="search",category="search",namespace="prod",} 47.563520332000024
+# HELP karen_product_suggestion_index_fetch_time millis took to fetch the index
+# TYPE karen_product_suggestion_index_fetch_time gauge
+karen_product_suggestion_index_fetch_time{namespace="prod",} 6.9528E-5
+# HELP karen_index_loading_delay_seconds The delay in seconds between creating the index by Maestro and reading it by karen
+# TYPE karen_index_loading_delay_seconds gauge
+karen_index_loading_delay_seconds{namespace="prod",} 0.0
+# HELP karen_telemetry_event_batch_error_count_total total event batches failed
+# TYPE karen_telemetry_event_batch_error_count_total counter
+karen_telemetry_event_batch_error_count_total{namespace="prod",} 0.0
+# HELP jvm_classes_currently_loaded The number of classes that are currently loaded in the JVM
+# TYPE jvm_classes_currently_loaded gauge
+jvm_classes_currently_loaded{namespace="prod",} 21792.0
+# HELP jvm_classes_loaded_total The total number of classes that have been loaded since the JVM has started execution
+# TYPE jvm_classes_loaded_total counter
+jvm_classes_loaded_total{namespace="prod",} 22018.0
+# HELP jvm_classes_unloaded_total The total number of classes that have been unloaded since the JVM has started execution
+# TYPE jvm_classes_unloaded_total counter
+jvm_classes_unloaded_total{namespace="prod",} 226.0
+# HELP karen_product_variants_per_product variants per product rate
+# TYPE karen_product_variants_per_product summary
+karen_product_variants_per_product{quantile="0.3",namespace="prod",} NaN
+karen_product_variants_per_product{quantile="0.5",namespace="prod",} NaN
+karen_product_variants_per_product{quantile="0.9",namespace="prod",} NaN
+karen_product_variants_per_product{quantile="0.95",namespace="prod",} NaN
+karen_product_variants_per_product{quantile="0.98",namespace="prod",} NaN
+karen_product_variants_per_product{quantile="0.99",namespace="prod",} NaN
+karen_product_variants_per_product_count{namespace="prod",} 0.0
+karen_product_variants_per_product_sum{namespace="prod",} 0.0
+# HELP karen_suggestion_index_size_bytes suggestion index size in bytes
+# TYPE karen_suggestion_index_size_bytes gauge
+karen_suggestion_index_size_bytes{namespace="prod",} 0.0
+# HELP karen_product_index_fetch_time millis took to fetch the index
+# TYPE karen_product_index_fetch_time gauge
+karen_product_index_fetch_time{namespace="prod",} 1.895007501
+# HELP karen_recommend_request_count_total total recommend requests
+# TYPE karen_recommend_request_count_total counter
+karen_recommend_request_count_total{namespace="prod",} 0.0
+# HELP karen_product_query_length query length
+# TYPE karen_product_query_length summary
+karen_product_query_length{quantile="0.3",namespace="prod",} 7.0
+karen_product_query_length{quantile="0.5",namespace="prod",} 7.0
+karen_product_query_length{quantile="0.9",namespace="prod",} 7.0
+karen_product_query_length{quantile="0.95",namespace="prod",} 7.0
+karen_product_query_length{quantile="0.98",namespace="prod",} 7.0
+karen_product_query_length{quantile="0.99",namespace="prod",} 7.0
+karen_product_query_length_count{namespace="prod",} 8505.0
+karen_product_query_length_sum{namespace="prod",} 59986.0
+# HELP karen_recommend_seconds recommend query timing
+# TYPE karen_recommend_seconds summary
+karen_recommend_seconds{name="trending",location="local",source="index",stage="total",quantile="0.3",namespace="prod",} NaN
+karen_recommend_seconds{name="trending",location="local",source="index",stage="total",quantile="0.5",namespace="prod",} NaN
+karen_recommend_seconds{name="trending",location="local",source="index",stage="total",quantile="0.9",namespace="prod",} NaN
+karen_recommend_seconds{name="trending",location="local",source="index",stage="total",quantile="0.95",namespace="prod",} NaN
+karen_recommend_seconds{name="trending",location="local",source="index",stage="total",quantile="0.98",namespace="prod",} NaN
+karen_recommend_seconds{name="trending",location="local",source="index",stage="total",quantile="0.99",namespace="prod",} NaN
+karen_recommend_seconds_count{name="trending",location="local",source="index",stage="total",namespace="prod",} 61.0
+karen_recommend_seconds_sum{name="trending",location="local",source="index",stage="total",namespace="prod",} 0.326796963
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="recommend",quantile="0.3",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="recommend",quantile="0.5",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="recommend",quantile="0.9",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="recommend",quantile="0.95",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="recommend",quantile="0.98",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="recommend",quantile="0.99",namespace="prod",} NaN
+karen_recommend_seconds_count{name="viewed",location="remote",source="redis",stage="recommend",namespace="prod",} 8.0
+karen_recommend_seconds_sum{name="viewed",location="remote",source="redis",stage="recommend",namespace="prod",} 0.039598618
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="make_response",quantile="0.3",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="make_response",quantile="0.5",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="make_response",quantile="0.9",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="make_response",quantile="0.95",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="make_response",quantile="0.98",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="make_response",quantile="0.99",namespace="prod",} NaN
+karen_recommend_seconds_count{name="viewed",location="remote",source="redis",stage="make_response",namespace="prod",} 8.0
+karen_recommend_seconds_sum{name="viewed",location="remote",source="redis",stage="make_response",namespace="prod",} 5.232E-6
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="merge",quantile="0.3",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="merge",quantile="0.5",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="merge",quantile="0.9",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="merge",quantile="0.95",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="merge",quantile="0.98",namespace="prod",} NaN
+karen_recommend_seconds{name="viewed",location="remote",source="redis",stage="merge",quantile="0.99",namespace="prod",} NaN
+karen_recommend_seconds_count{name="viewed",location="remote",source="redis",stage="merge",namespace="prod",} 8.0
+karen_recommend_seconds_sum{name="viewed",location="remote",source="redis",stage="merge",namespace="prod",} 9.511000000000001E-6
+# HELP karen_content_fetch_seconds seconds to do a fetch part of request
+# TYPE karen_content_fetch_seconds summary
+karen_content_fetch_seconds{quantile="0.3",namespace="prod",} 8.34131E-4
+karen_content_fetch_seconds{quantile="0.5",namespace="prod",} 8.34131E-4
+karen_content_fetch_seconds{quantile="0.9",namespace="prod",} 8.96704E-4
+karen_content_fetch_seconds{quantile="0.95",namespace="prod",} 8.96704E-4
+karen_content_fetch_seconds{quantile="0.98",namespace="prod",} 8.96704E-4
+karen_content_fetch_seconds{quantile="0.99",namespace="prod",} 8.96704E-4
+karen_content_fetch_seconds_count{namespace="prod",} 271.0
+karen_content_fetch_seconds_sum{namespace="prod",} 0.21531963399999993
+# HELP karen_product_pin_count number of pins in request
+# TYPE karen_product_pin_count summary
+karen_product_pin_count{quantile="0.3",namespace="prod",} 0.0
+karen_product_pin_count{quantile="0.5",namespace="prod",} 0.0
+karen_product_pin_count{quantile="0.9",namespace="prod",} 1.0
+karen_product_pin_count{quantile="0.95",namespace="prod",} 1.0
+karen_product_pin_count{quantile="0.98",namespace="prod",} 1.0
+karen_product_pin_count{quantile="0.99",namespace="prod",} 1.0
+karen_product_pin_count_count{namespace="prod",} 8829.0
+karen_product_pin_count_sum{namespace="prod",} 238.0
+# HELP karen_product_return_field_count number of return fields in request
+# TYPE karen_product_return_field_count summary
+karen_product_return_field_count{quantile="0.3",namespace="prod",} NaN
+karen_product_return_field_count{quantile="0.5",namespace="prod",} NaN
+karen_product_return_field_count{quantile="0.9",namespace="prod",} NaN
+karen_product_return_field_count{quantile="0.95",namespace="prod",} NaN
+karen_product_return_field_count{quantile="0.98",namespace="prod",} NaN
+karen_product_return_field_count{quantile="0.99",namespace="prod",} NaN
+karen_product_return_field_count_count{namespace="prod",} 0.0
+karen_product_return_field_count_sum{namespace="prod",} 0.0
+# HELP karen_suggest_seconds time to do result processing
+# TYPE karen_suggest_seconds summary
+karen_suggest_seconds{stage="product_match",quantile="0.3",namespace="prod",} 0.010270061
+karen_suggest_seconds{stage="product_match",quantile="0.5",namespace="prod",} 0.010270061
+karen_suggest_seconds{stage="product_match",quantile="0.9",namespace="prod",} 0.010270061
+karen_suggest_seconds{stage="product_match",quantile="0.95",namespace="prod",} 0.010270061
+karen_suggest_seconds{stage="product_match",quantile="0.98",namespace="prod",} 0.010270061
+karen_suggest_seconds{stage="product_match",quantile="0.99",namespace="prod",} 0.010270061
+karen_suggest_seconds_count{stage="product_match",namespace="prod",} 135.0
+karen_suggest_seconds_sum{stage="product_match",namespace="prod",} 1.1763992069999996
+karen_suggest_seconds{stage="total",quantile="0.3",namespace="prod",} 0.077775066
+karen_suggest_seconds{stage="total",quantile="0.5",namespace="prod",} 0.077775066
+karen_suggest_seconds{stage="total",quantile="0.9",namespace="prod",} 0.077775066
+karen_suggest_seconds{stage="total",quantile="0.95",namespace="prod",} 0.077775066
+karen_suggest_seconds{stage="total",quantile="0.98",namespace="prod",} 0.077775066
+karen_suggest_seconds{stage="total",quantile="0.99",namespace="prod",} 0.077775066
+karen_suggest_seconds_count{stage="total",namespace="prod",} 135.0
+karen_suggest_seconds_sum{stage="total",namespace="prod",} 4.887833633
+karen_suggest_seconds{stage="has_results",quantile="0.3",namespace="prod",} NaN
+karen_suggest_seconds{stage="has_results",quantile="0.5",namespace="prod",} NaN
+karen_suggest_seconds{stage="has_results",quantile="0.9",namespace="prod",} NaN
+karen_suggest_seconds{stage="has_results",quantile="0.95",namespace="prod",} NaN
+karen_suggest_seconds{stage="has_results",quantile="0.98",namespace="prod",} NaN
+karen_suggest_seconds{stage="has_results",quantile="0.99",namespace="prod",} NaN
+karen_suggest_seconds_count{stage="has_results",namespace="prod",} 76.0
+karen_suggest_seconds_sum{stage="has_results",namespace="prod",} 0.7954020519999998
+karen_suggest_seconds{stage="generate",quantile="0.3",namespace="prod",} NaN
+karen_suggest_seconds{stage="generate",quantile="0.5",namespace="prod",} NaN
+karen_suggest_seconds{stage="generate",quantile="0.9",namespace="prod",} NaN
+karen_suggest_seconds{stage="generate",quantile="0.95",namespace="prod",} NaN
+karen_suggest_seconds{stage="generate",quantile="0.98",namespace="prod",} NaN
+karen_suggest_seconds{stage="generate",quantile="0.99",namespace="prod",} NaN
+karen_suggest_seconds_count{stage="generate",namespace="prod",} 79.0
+karen_suggest_seconds_sum{stage="generate",namespace="prod",} 2.722172285000001
+# HELP karen_telemetry_event_count_total total events emitted
+# TYPE karen_telemetry_event_count_total counter
+karen_telemetry_event_count_total{namespace="prod",} 732.0
+# HELP karen_content_search_seconds seconds to do a search part of request
+# TYPE karen_content_search_seconds summary
+karen_content_search_seconds{quantile="0.3",namespace="prod",} 3.30512E-4
+karen_content_search_seconds{quantile="0.5",namespace="prod",} 3.30512E-4
+karen_content_search_seconds{quantile="0.9",namespace="prod",} 4.55822E-4
+karen_content_search_seconds{quantile="0.95",namespace="prod",} 4.55822E-4
+karen_content_search_seconds{quantile="0.98",namespace="prod",} 4.55822E-4
+karen_content_search_seconds{quantile="0.99",namespace="prod",} 4.55822E-4
+karen_content_search_seconds_count{namespace="prod",} 271.0
+karen_content_search_seconds_sum{namespace="prod",} 0.13906469000000007
+# HELP jvm_gc_collection_millis_created Garbage collecting times.
+# TYPE jvm_gc_collection_millis_created gauge
+jvm_gc_collection_millis_created{gc="G1 Young Generation",namespace="prod",} 1.709565197964E9
+jvm_gc_collection_millis_created{gc="G1 Concurrent GC",namespace="prod",} 1.709565721777E9
+# HELP jvm_memory_pool_allocated_bytes_created Total bytes allocated in a given JVM memory pool. Only updated after GC, not continuously.
+# TYPE jvm_memory_pool_allocated_bytes_created gauge
+jvm_memory_pool_allocated_bytes_created{pool="CodeHeap 'profiled nmethods'",namespace="prod",} 1.709565197953E9
+jvm_memory_pool_allocated_bytes_created{pool="G1 Old Gen",namespace="prod",} 1.709565197958E9
+jvm_memory_pool_allocated_bytes_created{pool="G1 Eden Space",namespace="prod",} 1.709565197958E9
+jvm_memory_pool_allocated_bytes_created{pool="CodeHeap 'non-profiled nmethods'",namespace="prod",} 1.709565197958E9
+jvm_memory_pool_allocated_bytes_created{pool="G1 Survivor Space",namespace="prod",} 1.709565197958E9
+jvm_memory_pool_allocated_bytes_created{pool="Compressed Class Space",namespace="prod",} 1.709565197958E9
+jvm_memory_pool_allocated_bytes_created{pool="Metaspace",namespace="prod",} 1.709565197958E9
+jvm_memory_pool_allocated_bytes_created{pool="CodeHeap 'non-nmethods'",namespace="prod",} 1.709565197958E9
+# HELP karen_autocomplete_seconds_created time to do result processing
+# TYPE karen_autocomplete_seconds_created gauge
+karen_autocomplete_seconds_created{source="content",stage="total",namespace="prod",} 1.709565656358E9
+# HELP karen_content_fetch_seconds_created seconds to do a fetch part of request
+# TYPE karen_content_fetch_seconds_created gauge
+karen_content_fetch_seconds_created{namespace="prod",} 1.709565656332E9
+# HELP karen_content_product_count_created number of products in the search response
+# TYPE karen_content_product_count_created gauge
+karen_content_product_count_created{namespace="prod",} 1.709565656332E9
+# HELP karen_content_product_matches_count_created number of products matched
+# TYPE karen_content_product_matches_count_created gauge
+karen_content_product_matches_count_created{namespace="prod",} 1.709565656332E9
+# HELP karen_content_search_seconds_created seconds to do a search part of request
+# TYPE karen_content_search_seconds_created gauge
+karen_content_search_seconds_created{namespace="prod",} 1.709565656332E9
+# HELP karen_content_total_seconds_created seconds to do a full request
+# TYPE karen_content_total_seconds_created gauge
+karen_content_total_seconds_created{namespace="prod",} 1.709565656332E9
+# HELP karen_product_facet_count_created number of facets in request
+# TYPE karen_product_facet_count_created gauge
+karen_product_facet_count_created{namespace="prod",} 1.709565206069E9
+# HELP karen_product_filter_count_created number of filters in request
+# TYPE karen_product_filter_count_created gauge
+karen_product_filter_count_created{namespace="prod",} 1.709565206069E9
+# HELP karen_product_histogram_seconds_created query timing
+# TYPE karen_product_histogram_seconds_created gauge
+karen_product_histogram_seconds_created{stage="rerank_response",namespace="prod",} 1.709625621334E9
+karen_product_histogram_seconds_created{stage="rerank",namespace="prod",} 1.709625621258E9
+karen_product_histogram_seconds_created{stage="fetch",namespace="prod",} 1.709565206284E9
+karen_product_histogram_seconds_created{stage="local_request",namespace="prod",} 1.709565209445E9
+karen_product_histogram_seconds_created{stage="telemetry",namespace="prod",} 1.709565655823E9
+karen_product_histogram_seconds_created{stage="facet",namespace="prod",} 1.709565206208E9
+karen_product_histogram_seconds_created{stage="search",namespace="prod",} 1.709565206071E9
+# HELP karen_product_pin_count_created number of pins in request
+# TYPE karen_product_pin_count_created gauge
+karen_product_pin_count_created{namespace="prod",} 1.709565206069E9
+# HELP karen_product_query_length_created query length
+# TYPE karen_product_query_length_created gauge
+karen_product_query_length_created{namespace="prod",} 1.709565206068E9
+# HELP karen_product_query_term_count_created query term count
+# TYPE karen_product_query_term_count_created gauge
+karen_product_query_term_count_created{namespace="prod",} 1.709565206069E9
+# HELP karen_product_request_count_created total search requests made
+# TYPE karen_product_request_count_created gauge
+karen_product_request_count_created{namespace="prod",} 1.70956520607E9
+# HELP karen_product_return_field_count_created number of return fields in request
+# TYPE karen_product_return_field_count_created gauge
+karen_product_return_field_count_created{namespace="prod",} 1.709565206069E9
+# HELP karen_product_search_field_count_created number of search fields in request
+# TYPE karen_product_search_field_count_created gauge
+karen_product_search_field_count_created{namespace="prod",} 1.709565206069E9
+# HELP karen_product_seconds_created query timing
+# TYPE karen_product_seconds_created gauge
+karen_product_seconds_created{stage="rerank_response",namespace="prod",} 1.709625621334E9
+karen_product_seconds_created{stage="rerank",namespace="prod",} 1.709625621257E9
+karen_product_seconds_created{stage="fetch",namespace="prod",} 1.709565206284E9
+karen_product_seconds_created{stage="local_request",namespace="prod",} 1.709565209445E9
+karen_product_seconds_created{stage="total",namespace="prod",} 1.70956529606E9
+karen_product_seconds_created{stage="telemetry",namespace="prod",} 1.709565655823E9
+karen_product_seconds_created{stage="facet",namespace="prod",} 1.709565206208E9
+karen_product_seconds_created{stage="search",namespace="prod",} 1.709565206071E9
+# HELP karen_product_variants_per_product_created variants per product rate
+# TYPE karen_product_variants_per_product_created gauge
+karen_product_variants_per_product_created{namespace="prod",} 1.709565206069E9
+# HELP karen_recommend_request_count_created total recommend requests
+# TYPE karen_recommend_request_count_created gauge
+karen_recommend_request_count_created{namespace="prod",} 1.709565688676E9
+# HELP karen_recommend_request_failed_created total recommend requests failed
+# TYPE karen_recommend_request_failed_created gauge
+karen_recommend_request_failed_created{namespace="prod",} 1.709565688676E9
+# HELP karen_recommend_request_fallbacked_created total recommend requests fallbacked
+# TYPE karen_recommend_request_fallbacked_created gauge
+karen_recommend_request_fallbacked_created{namespace="prod",} 1.709565688676E9
+# HELP karen_recommend_request_succeeded_created total recommend requests succeeded
+# TYPE karen_recommend_request_succeeded_created gauge
+karen_recommend_request_succeeded_created{namespace="prod",} 1.709565688676E9
+# HELP karen_recommend_seconds_created recommend query timing
+# TYPE karen_recommend_seconds_created gauge
+karen_recommend_seconds_created{name="trending",location="local",source="index",stage="total",namespace="prod",} 1.709565688693E9
+karen_recommend_seconds_created{name="viewed",location="remote",source="redis",stage="recommend",namespace="prod",} 1.709712012767E9
+karen_recommend_seconds_created{name="viewed",location="remote",source="redis",stage="make_response",namespace="prod",} 1.709712012769E9
+karen_recommend_seconds_created{name="viewed",location="remote",source="redis",stage="merge",namespace="prod",} 1.709712012768E9
+# HELP karen_requests_latency_created karen requests latency
+# TYPE karen_requests_latency_created gauge
+karen_requests_latency_created{requestType="health",category="health",namespace="prod",} 1.70956520958E9
+karen_requests_latency_created{requestType="collection",category="collection",namespace="prod",} 1.709625621397E9
+karen_requests_latency_created{requestType="health",category="health_search",namespace="prod",} 1.709565209493E9
+karen_requests_latency_created{requestType="recommend",category="viewed",namespace="prod",} 1.709712012779E9
+karen_requests_latency_created{requestType="content",category="content",namespace="prod",} 1.709570487621E9
+karen_requests_latency_created{requestType="recommend",category="trending",namespace="prod",} 1.709565688706E9
+karen_requests_latency_created{requestType="suggest",category="suggest",namespace="prod",} 1.709565656366E9
+karen_requests_latency_created{requestType="search",category="search",namespace="prod",} 1.709565296177E9
+# HELP karen_requests_latency_histogram_created karen requests latency
+# TYPE karen_requests_latency_histogram_created gauge
+karen_requests_latency_histogram_created{requestType="health",category="health",namespace="prod",} 1.70956520958E9
+karen_requests_latency_histogram_created{requestType="collection",category="collection",namespace="prod",} 1.709625621397E9
+karen_requests_latency_histogram_created{requestType="health",category="health_search",namespace="prod",} 1.709565209493E9
+karen_requests_latency_histogram_created{requestType="recommend",category="viewed",namespace="prod",} 1.709712012779E9
+karen_requests_latency_histogram_created{requestType="content",category="content",namespace="prod",} 1.709570487621E9
+karen_requests_latency_histogram_created{requestType="recommend",category="trending",namespace="prod",} 1.709565688706E9
+karen_requests_latency_histogram_created{requestType="suggest",category="suggest",namespace="prod",} 1.709565656366E9
+karen_requests_latency_histogram_created{requestType="search",category="search",namespace="prod",} 1.709565296177E9
+# HELP karen_rerank_kendall_coeff_base_created KRR for response
+# TYPE karen_rerank_kendall_coeff_base_created gauge
+karen_rerank_kendall_coeff_base_created{ranker="wanda",namespace="prod",} 1.709625621363E9
+# HELP karen_rerank_kendall_coeff_bins_created KRR for response
+# TYPE karen_rerank_kendall_coeff_bins_created gauge
+karen_rerank_kendall_coeff_bins_created{ranker="wanda",namespace="prod",} 1.709625621364E9
+# HELP karen_rerank_request_count_created number of rerank requests
+# TYPE karen_rerank_request_count_created gauge
+karen_rerank_request_count_created{ranker="rerank",namespace="prod",} 1.709625621377E9
+# HELP karen_rerank_response_latency_created rerank latency
+# TYPE karen_rerank_response_latency_created gauge
+karen_rerank_response_latency_created{ranker="noop",namespace="prod",} 1.709642265969E9
+karen_rerank_response_latency_created{ranker="wanda",namespace="prod",} 1.709625621326E9
+# HELP karen_suggest_action_seconds_created suggest action processing
+# TYPE karen_suggest_action_seconds_created gauge
+karen_suggest_action_seconds_created{source="product_search",stage="total",namespace="prod",} 1.709565656306E9
+karen_suggest_action_seconds_created{source="top_suggestion",stage="total",namespace="prod",} 1.709565656307E9
+# HELP karen_suggest_has_results_one_seconds_created time to check if there's some search results for a single suggestion
+# TYPE karen_suggest_has_results_one_seconds_created gauge
+karen_suggest_has_results_one_seconds_created{namespace="prod",} 1.709565656189E9
+# HELP karen_suggest_hasresults_cache_refresh_created no-results-cache cache post-index reload refresh
+# TYPE karen_suggest_hasresults_cache_refresh_created gauge
+karen_suggest_hasresults_cache_refresh_created{namespace="prod",} 1.709565656189E9
+# HELP karen_suggest_request_count_created total search requests made
+# TYPE karen_suggest_request_count_created gauge
+karen_suggest_request_count_created{namespace="prod",} 1.70956565579E9
+# HELP karen_suggest_seconds_created time to do result processing
+# TYPE karen_suggest_seconds_created gauge
+karen_suggest_seconds_created{stage="product_match",namespace="prod",} 1.709565655792E9
+karen_suggest_seconds_created{stage="total",namespace="prod",} 1.709565656358E9
+karen_suggest_seconds_created{stage="has_results",namespace="prod",} 1.709565803908E9
+karen_suggest_seconds_created{stage="generate",namespace="prod",} 1.70956572981E9
+# HELP karen_suggest_total_seconds_created time to run the query
+# TYPE karen_suggest_total_seconds_created gauge
+karen_suggest_total_seconds_created{namespace="prod",} 1.70956565579E9
+# HELP karen_suggest_total_seconds_histogram_created time to run the query
+# TYPE karen_suggest_total_seconds_histogram_created gauge
+karen_suggest_total_seconds_histogram_created{namespace="prod",} 1.709565655791E9
+# HELP karen_telemetry_event_batch_count_created total event batches submitted
+# TYPE karen_telemetry_event_batch_count_created gauge
+karen_telemetry_event_batch_count_created{namespace="prod",} 1.709565656182E9
+# HELP karen_telemetry_event_batch_error_count_created total event batches failed
+# TYPE karen_telemetry_event_batch_error_count_created gauge
+karen_telemetry_event_batch_error_count_created{namespace="prod",} 1.709565656182E9
+# HELP karen_telemetry_event_count_created total events emitted
+# TYPE karen_telemetry_event_count_created gauge
+karen_telemetry_event_count_created{namespace="prod",} 1.709565656181E9
+# HELP karen_telemetry_kinesis_latency_created time to write to kinesis
+# TYPE karen_telemetry_kinesis_latency_created gauge
+karen_telemetry_kinesis_latency_created{namespace="prod",} 1.709565656182E9
