@@ -24,7 +24,8 @@ This repository has pre-built [Docker images](https://github.com/otobrglez/ella/
 Recent `master` build can be obtained via the `ghcr.io` container registry.
 
 ```bash
-docker run -ti ghcr.io/otobrglez/ella:master /usr/local/bin/ella http://0.0.0.0:8000/metrics
+docker run ghcr.io/otobrglez/ella:master \
+  /usr/local/bin/ella http://0.0.0.0:8000/metrics
 ```
 
 ## Development 🏗
