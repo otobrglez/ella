@@ -5,9 +5,9 @@ use log::error;
 use reqwest::Client;
 use rocket::futures::stream;
 
+use crate::{ella_metrics, prom_to_json};
 use crate::metric_endpoint::MetricEndpoint;
 use crate::metric_parser::MetricParser;
-use crate::{ella_metrics, prom_to_json};
 
 pub struct MetricClient {
     client: Client,
@@ -62,7 +62,7 @@ impl MetricClient {
     fn parse_metrics(raw: String) -> () {
         let result = MetricParser::prom_to_families(raw).unwrap();
         // let json = serde_json::to_string_pretty(&result).unwrap();
-        let json = serde_json::to_string(&result).unwrap();
-        println!("{}", json);
+        // let json = serde_json::to_string(&result).unwrap();
+        println!("Families size: {}", result.len());
     }
 }

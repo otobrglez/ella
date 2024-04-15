@@ -3,13 +3,14 @@ extern crate rocket;
 
 use std::io;
 
+use once_cell::sync::Lazy;
 use rocket::tokio::task::spawn_blocking;
 use rocket::tokio::time::{Duration, sleep};
 use rocket_prometheus::{
-    prometheus::{opts, IntCounterVec},
+    prometheus::{IntCounterVec, opts},
     PrometheusMetrics
 };
-use once_cell::sync::Lazy;
+
 use ella::cli::CLI;
 use ella::ella_metrics;
 use ella::metric_client::MetricClient;

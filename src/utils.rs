@@ -1,6 +1,7 @@
-use serde::de::{self, Visitor};
-use serde::{Deserialize, Deserializer};
 use std::fmt;
+
+use serde::de::{self, Visitor};
+use serde::Deserializer;
 
 struct F64InQuotes;
 
